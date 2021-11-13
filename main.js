@@ -184,9 +184,9 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 anu_user = v.vname || v.notify || num.split('@')[0]
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
-                teks = `🌿 *┌──❀*̥˚──◌──◌──❀*̥˚──┐
+                teks = `*┌──❀*̥˚──◌──◌──❀*̥˚──┐
 
-➣ *@⁨+19302001417*
+➣ *@⁨+1(930)2001417*
 
 ➣ *BIENVENID@*
 
@@ -194,13 +194,14 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
 
 └◌──❀*̥˚───◌────❀*̥˚─┘
 
-*Hola 👋🏻 Espero que se sienta como en casa*  🍭🍬
-🍧🍦🥤
-*Disfruta del grupo 🥳 se respetuoso, sociable y aporta 🤗 Quizás encuentres el amor, depende de ti*    🥺 👉🏻👈🏻💞♥️💞
+*Hola @${num.split('@')[0]}\n 👋🏻 Espero que se sienta como en casa*  🍟🍭🍬
+🍧🍦🍡
+*Disfruta del grupo 🥳 se respetuoso, sociable y aporta 🤗 Quizás encuentres el amor*    🥺 👉🏻👈🏻💞♥️💞
 *Lee y respeta las reglas por favor, para evitar malos entendidos*
 
-*Flavii0 CL M0rus** @${num.split('@')[0]}\n🌿 *Bɪᴏ* : *${thu.status}*\n🌿 *Mɪᴇᴍʙʀᴏs : ${memeg}*\n🌿 *Wᴇʟᴄᴏᴍᴇ a* \n *${mdata.subject}*\n🐢 *Lee la descripción*`
-                welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'DESCRIPCION'},type:1}]
+*Flavii0CL**
+ *Miembros* : ${memeg}*\n *Bienvenido a* \n *${mdata.subject}*\n *Lee las reglas aqui 👇🏻*`
+                welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'REGLASDELGRUPO'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 client.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
                  }      
