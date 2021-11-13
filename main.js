@@ -194,13 +194,12 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
 
 └◌──❀*̥˚───◌────❀*̥˚─┘
 
-*Hola @${num.split('@')[0]}\n 👋🏻 Espero que se sienta como en casa*  🍟🍭🍬
-🍧🍦🍡
-*Disfruta del grupo 🥳 se respetuoso, sociable y aporta 🤗 Quizás encuentres el amor*    🥺 👉🏻👈🏻💞♥️💞
-*Lee y respeta las reglas por favor, para evitar malos entendidos*
-
-*Flavii0CL**
- *Miembros* : ${memeg}*\n *Bienvenido a* \n *${mdata.subject}*\n *Lee las reglas aqui 👇🏻*`
+*HOLA* @${num.split('@')[0]}\n 👋🏻 *ESPERO QUE SE SIENTA COMO EN CASA*🍟🍭🍬
+  🍧🍦🍡
+*DISFRUTA DEL GRUPO* 🥳 SE RESPETUOSO,SOCIABLE Y APORTA 🤗 QUIZÁS ENCUENTRES EL AMOR*     🥺 👉🏻👈🏻💞♥️💞
+*LEE Y RESPETA LAS REGLAS POR FAVOR, PARA EVITAR MALOS ENTENDIDOS*
+*ＦＬＡＶＩＩＯ ＣＬ* 
+*ＬＥＥ ＬＡＳ ＲＥＧＬＡＳ ＡＱＵＩ👇🏻*`
                 welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'REGLASDELGRUPO'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 client.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
