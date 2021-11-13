@@ -372,8 +372,8 @@ const checkRegisteredUser = (sender) => {
     if (prefix && command) cmdadd();
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
-const daftar1 = `Hola ${pushname} ${ucapanWaktu}\n\nAntes de usar el bot, verifiquese primero`
-       const daftar2 = '```Si no ves el botón escribe #verify```'
+const daftar1 = `HOLA ${pushname} ${ucapanWaktu}\n\nNuevo Participante , verifiquese primero`
+       const daftar2 = '```Alv pamela y Omni #soynuevo```'
        const daftar3 = [
           {
             buttonId: `verify`,
@@ -1206,9 +1206,8 @@ const serialUser = createSerial(18)
 	        _registered.push(sender)
 	        fs.writeFileSync('./database/user/registered.json', JSON.stringify(_registered))
 	        addRegisteredUser(sender, serialUser)
-	         const anuu = `「 *REGISTRO DE USUARIO* 」
-*Gracias por Registrarse en la Base de Datos*
-
+	         const anuu = `「 *NUEVO MIEMBRO* 」
+*BIENVENIDO AL GRUPO, LEE LAS REGLAS*
 *☂︎ Nombre :* ${pushname}
 *☂︎ API :* +${sender.split('@')[0]}
 *☂︎ Serial:* ${serialUser}
@@ -1216,9 +1215,9 @@ const serialUser = createSerial(18)
 
 *「 𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4 」*`
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
-             buttons = [{buttonId: `menu`,buttonText:{displayText: `🌿MENU🌿`},type:1}]
+             buttons = [{buttonId: `menu`,buttonText:{displayText: `MENU`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
-              buttonsMessage = {footerText:'ConfuMods', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'BotDFlavi0', imageMessage: imageMsg,
               contentText:`${anuu}`,buttons,headerType:4}
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: fkontak})
               cnf.relayWAMessage(prep)
@@ -1226,7 +1225,7 @@ const serialUser = createSerial(18)
 	    // console.log(e)
             setTimeout( () => {
 			cnf.updatePresence(from, Presence.composing)
-			reply(`*Gracias por registrarse en 𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4*`)
+			reply(`*Aporta o será eliminado, Ban Activado 𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4*`)
 		}, 2000)
         break
       
@@ -1242,12 +1241,12 @@ groups = cnf.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`Hola! ${pushname} 👋\n\nSI EL MENÚ NO APARECE AL HACER CLIC DKT 56 EL BOTÓN DE MENÚ, ESCRIBA: NO SE USAR EL BOT`
+       txtt =`HOLA! ${pushname} 👋🏻\n\nRESPETA LAS REGLAS`
 
                buttons = [{buttonId:`allmenu`, 
-               buttonText:{displayText: 'MENU🌱'},type:1},
-               {buttonId:`owner`,buttonText:{displayText:'CREADOR🐢'},type:1},
-               {buttonId:`command`,buttonText:{displayText:'🌿LIST MENU🌿'},type:1}]
+               buttonText:{displayText: 'MENU'},type:1},
+               {buttonId:`owner`,buttonText:{displayText:'CREADOR'},type:1},
+               {buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1}]
 
 
                imageMsg = (await cnf.prepareMessageMedia(fs.readFileSync(`./stik/oksip.jpeg`), 'imageMessage', {thumbnail: fs.readFileSync(`./stik/oksip.jpeg`)})).imageMessage
