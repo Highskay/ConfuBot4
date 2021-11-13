@@ -1242,7 +1242,7 @@ groups = cnf.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`Hola! ${pushname} 👋\n\nSI EL MENÚ NO APARECE AL HACER CLIC EN EL BOTÓN DE MENÚ, ESCRIBA #allmenu`
+       txtt =`Hola! ${pushname} 👋\n\nSI EL MENÚ NO APARECE AL HACER CLIC EN EL BOTÓN DE MENÚ, ESCRIBA: NO SE USAR EL BOT`
 
                buttons = [{buttonId:`allmenu`, 
                buttonText:{displayText: 'MENU🌱'},type:1},
