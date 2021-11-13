@@ -1245,9 +1245,9 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
        txtt =`HOLA! ${pushname} 👋\n\nSI EL MENÚ NO APARECE AL HACER CLIC EN EL BOTÓN DE MENÚ, ESCRIBA: NO SE USAR EL BOT`
 
                buttons = [{buttonId:`allmenu`, 
-               buttonText:{displayText: 'MENU'},type:1},
-               {buttonId:`owner`,buttonText:{displayText:'CREADOR'},type:1},
-               {buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1}]
+               buttonText:{displayText: 'SOLO ADMIN FLAV10'},
+               {buttonId:`owner`,buttonText:{displayText:'CREADOR'},
+               {buttonId:`command`,buttonText:{displayText: 'ADMIN'}]
 
 
                imageMsg = (await cnf.prepareMessageMedia(fs.readFileSync(`./stik/oksip.jpeg`), 'imageMessage', {thumbnail: fs.readFileSync(`./stik/oksip.jpeg`)})).imageMessage
@@ -3978,7 +3978,7 @@ case 'waifu':
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
 		      buttons = [{buttonId: `waifu`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = ( await cnf.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
-              buttonsMessage = {footerText:'No olvides donar ok no xd☕', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Ella esta linda?', imageMessage: imageMsg,
               contentText:`Click Next`,buttons,headerType:4}
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               cnf.relayWAMessage(prep)
