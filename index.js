@@ -1246,7 +1246,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 
                buttons = [{buttonId:`allmenu`, 
                buttonText:{displayText:'MENU'},type:1'},
-               {buttonId:`owner`,buttonText:{displayText:'CREADOR'},
+               {buttonId:`owner`,buttonText:{displayText:'CREADOR'},type:1'},
                {buttonId:`command`,buttonText:{displayText: 'LIST MENU'},type:1'}]
 
 
