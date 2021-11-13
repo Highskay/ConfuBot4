@@ -1245,9 +1245,9 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
        txtt =`HOLA! ${pushname} 👋\n\nSI EL MENÚ NO APARECE AL HACER CLIC EN EL BOTÓN DE MENÚ, ESCRIBA: NO SE USAR EL BOT`
 
                buttons = [{buttonId:`allmenu`, 
-               buttonText:{displayText: 'SOLO ADMIN FLAV10'},
+               buttonText:{displayText:'MENU'},type:1'},
                {buttonId:`owner`,buttonText:{displayText:'CREADOR'},
-               {buttonId:`command`,buttonText:{displayText: 'ADMIN'}]
+               {buttonId:`command`,buttonText:{displayText: 'LIST MENU'},type:1'}]
 
 
                imageMsg = (await cnf.prepareMessageMedia(fs.readFileSync(`./stik/oksip.jpeg`), 'imageMessage', {thumbnail: fs.readFileSync(`./stik/oksip.jpeg`)})).imageMessage
