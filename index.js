@@ -102,19 +102,19 @@ const time2 = moment().tz("Asia/Jakarta").format("HH:mm:ss");
       var ucapanWaktu = "Buenas Noches";
     }
     if (time2 < "19:00:00") {
-      var ucapanWaktu = "Buenas Noches🌞";
+      var ucapanWaktu = "Buenas Dias😼";
     }
     if (time2 < "18:00:00") {
-      var ucapanWaktu = "Buenas Tardes🌄";
+      var ucapanWaktu = "Buenas Dias😼";
     }
     if (time2 < "15:00:00") {
-      var ucapanWaktu = "Buenas Tardes☀️";
+      var ucapanWaktu = "Buenas Tardes😼";
     }
     if (time2 < "11:00:00") {
-      var ucapanWaktu = "Buenos Días🌅";
+      var ucapanWaktu = "Buenas Noches😼";
     }
     if (time2 < "05:00:00") {
-      var ucapanWaktu = "Buenas Tardes🌄";
+      var ucapanWaktu = "Buenas Noches😼";
     }
  // BATAS \\
 menusimpel = false
@@ -373,7 +373,7 @@ const checkRegisteredUser = (sender) => {
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
 const daftar1 = `Hola ${pushname} ${ucapanWaktu}\n\nAntes de usar el bot, verifiquese primero`
-       const daftar2 = '```Si no ves el botón escribe #verify```'
+       const daftar2 = '```Si no ves el botón avisa admins```'
        const daftar3 = [
           {
             buttonId: `verify`,
@@ -1216,7 +1216,7 @@ const serialUser = createSerial(18)
 
 *「 𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4 」*`
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
-             buttons = [{buttonId: `menu`,buttonText:{displayText: `🌿MENU🌿`},type:1}]
+             buttons = [{buttonId: `menu`,buttonText:{displayText: `MENU`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
               buttonsMessage = {footerText:'ConfuMods', imageMessage: imageMsg,
               contentText:`${anuu}`,buttons,headerType:4}
@@ -1242,19 +1242,19 @@ groups = cnf.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`Hola! ${pushname} 👋\n\nSI EL MENÚ NO APARECE AL HACER CLIC EN EL BOTÓN DE MENÚ, ESCRIBA: NO SE USAR EL BOT`
+       txtt =`HOLA! ${pushname} 👋\n\nSI EL MENÚ NO APARECE AL HACER CLIC EN EL BOTÓN DE MENÚ, ESCRIBA: NO SE USAR EL BOT`
 
                buttons = [{buttonId:`allmenu`, 
-               buttonText:{displayText: 'MENU🌱'},type:1},
-               {buttonId:`owner`,buttonText:{displayText:'CREADOR🐢'},type:1},
-               {buttonId:`command`,buttonText:{displayText:'🌿LIST MENU🌿'},type:1}]
+               buttonText:{displayText: 'MENU'},type:1},
+               {buttonId:`owner`,buttonText:{displayText:'CREADOR'},type:1},
+               {buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1}]
 
 
                imageMsg = (await cnf.prepareMessageMedia(fs.readFileSync(`./stik/oksip.jpeg`), 'imageMessage', {thumbnail: fs.readFileSync(`./stik/oksip.jpeg`)})).imageMessage
 
                buttonsMessage = {
                contentText: `${txtt}`,
-               footerText: `🌿︎ 𝙀𝙨𝙩𝙖𝙙𝙤 🌿
+               footerText: ` 𝙀𝙨𝙩𝙖𝙙𝙤 
                
  𝐆𝐫𝐮𝐩𝐨 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
  𝐏𝐫𝐢𝐯𝐚𝐝𝐨 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
@@ -1292,7 +1292,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `
-🌿 Hola @${sender.split("@")[0]}🌿
+ Hola @${sender.split("@")[0]}
 
 シ︎ 𝐆𝐫𝐮𝐩𝐨 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
 ㋛︎ 𝐏𝐫𝐢𝐯𝐚𝐝𝐨 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
@@ -1440,7 +1440,7 @@ case 'creditos':
    var yez = `
    [ 𝐶𝑟𝑒𝑑𝑖𝑡𝑜𝑠 ] :
    
- 🌿 : wa.me/${dtod.split('@')[0]}
+ : wa.me/${dtod.split('@')[0]}
  `
      credit = cnf.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 1000, "message": `${yez}`, "footerText": "By Confu", "thumbnail": iye, "surface": 'CATALOG'}}, {quoted: mek})
             cnf.relayWAMessage(credit)
