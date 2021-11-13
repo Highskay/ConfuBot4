@@ -372,8 +372,8 @@ const checkRegisteredUser = (sender) => {
     if (prefix && command) cmdadd();
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
-const daftar1 = `Hola ${pushname} ${ucapanWaktu}\n\nAntes de usar el bot, verifiquese primero`
-       const daftar2 = '```Si no ves el botón escribe #verify```'
+const daftar1 = `BIENVENID@ ${pushname} ${ucapanWaktu}\n\Respeta las reglas del grupo, o será eliminado, verifiquese primero miembro nuevo`
+       const daftar2 = '```Si no ves el botón escribe #soynuev@```'
        const daftar3 = [
           {
             buttonId: `verify`,
@@ -1156,7 +1156,7 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
     if (isGroup && isAntilink && !mek.key.fromMe) {
       if (budy.includes("://chat.whatsapp.com/")) {
         if (isGroupAdmins) return
-        reply("ANTILINK!! LO SENTIMOS NO SE PERMITEN ENLACES HDPTA :V");
+        reply("ANTILINK!! LO SENTIMOS NO SE PERMITEN ENLACES TE MATO PERRA HDP:V");
         cnf.groupRemove(from, [sender]);
       }
     }
@@ -1206,8 +1206,8 @@ const serialUser = createSerial(18)
 	        _registered.push(sender)
 	        fs.writeFileSync('./database/user/registered.json', JSON.stringify(_registered))
 	        addRegisteredUser(sender, serialUser)
-	         const anuu = `「 *REGISTRO DE USUARIO* 」
-*Gracias por Registrarse en la Base de Datos*
+	         const anuu = '「 *NUEV@ MIEMBRO* 」
+*Miembro Nuevo Registrado en la Base de Datos*
 
 *☂︎ Nombre :* ${pushname}
 *☂︎ API :* +${sender.split('@')[0]}
@@ -1216,7 +1216,7 @@ const serialUser = createSerial(18)
 
 *「 𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4 」*`
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
-             buttons = [{buttonId: `menu`,buttonText:{displayText: `🌿MENU🌿`},type:1}]
+             buttons = [{buttonId: `menu`,buttonText:{displayText: `DISFRUTAELGRUPO⚡`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
               buttonsMessage = {footerText:'ConfuMods', imageMessage: imageMsg,
               contentText:`${anuu}`,buttons,headerType:4}
@@ -1226,7 +1226,7 @@ const serialUser = createSerial(18)
 	    // console.log(e)
             setTimeout( () => {
 			cnf.updatePresence(from, Presence.composing)
-			reply(`*Gracias por registrarse en 𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4*`)
+			reply(`*Nuevo miembro Aportar, ban activado 𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4*`)
 		}, 2000)
         break
       
@@ -1242,12 +1242,12 @@ groups = cnf.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`Hola! ${pushname} 👋\n\nSI EL MENÚ NO APARECE AL HACER CLIC DKT 56 EL BOTÓN DE MENÚ, ESCRIBA: NO SE USAR EL BOT`
+       txtt =`HOL@ NUEV@! ${pushname} 👋\n\nDISFRUTA EL GRUPO, APORTA Y RESPETA LAS REGLAS`
 
                buttons = [{buttonId:`allmenu`, 
-               buttonText:{displayText: 'MENU🌱'},type:1},
-               {buttonId:`owner`,buttonText:{displayText:'CREADOR🐢'},type:1},
-               {buttonId:`command`,buttonText:{displayText:'🌿LIST MENU🌿'},type:1}]
+               buttonText:{displayText: 'MENU'},type:1},
+               {buttonId:`owner`,buttonText:{displayText:'CREADOR'},type:1},
+               {buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1}]
 
 
                imageMsg = (await cnf.prepareMessageMedia(fs.readFileSync(`./stik/oksip.jpeg`), 'imageMessage', {thumbnail: fs.readFileSync(`./stik/oksip.jpeg`)})).imageMessage
@@ -2473,7 +2473,7 @@ case 'linkwa':
           return reply("Etiqueta");
         mentionede = mek.message.extendedTextMessage.contextInfo.participant;
         cnf.groupMakeAdmin(from, [mentionede]);
-        teks = `@${mentionede.split("@")[0]} Ahora es administrador `;
+        teks = `@${mentionede.split("@")[0]} AHORA ES ADMIN DEL GRUPO `;
         cnf.sendMessage(from, teks, text, {
           quoted: mek,
           contextInfo: { mentionedJid: [mentionede] },
