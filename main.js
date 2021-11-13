@@ -186,7 +186,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
                 teks = `*┌──❀*̥˚──◌──◌──❀*̥˚──┐
 
-➣ *@⁨+1(930)2001417*
+➣ @⁨+1(930)200-1417
 
 ➣ *BIENVENID@*
 
