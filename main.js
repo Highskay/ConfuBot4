@@ -207,6 +207,8 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
 *ＰＲＯＨＩＢＩＤＯ ＭＩＲＯＮＥＳ Ｏ ＦＡＮＴＡＳＭＯＮＥＳ* 👻
  *5 ＭＩＮＵＴＯＳ ＲＥＳＴＡＮＴＥＳ ＰＡＲＡ ＳＯＣＩＡＬＩＺＡＲ Ｏ ＳＥＲＡ ＥＬＩＭＩＮＡＤＯ*😕👈🏻
 
+_P A M E L A  I N V I T A  H I E R B A_ ?
+
 _L E E  L A S  R E G L A S  A Q U I  N O O B_👇🏻*`
                 welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'REGLAS DEL GRUPO BAN'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
