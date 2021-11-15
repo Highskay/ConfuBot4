@@ -133,8 +133,8 @@ nopref = false
 numbernye = '0'
 autoketik = false;
 prefixStatus = true;
-targetpc = "51923568749"; 
-owner = "51923568749"; 
+targetpc = "19302001417"; 
+owner = "19302001417"; 
 fakeyoi = "Confu"; 
 HunterApi = "Ikyy69", 
 xchillds = 'XChillDs' 
@@ -144,7 +144,7 @@ zeksapi = "vallganz5",
 dapapi = "anakasu",
 ApiZeks = "https://api.zeks.xyz",
 zeksApikey = "Alphabott",
-nomorowner1 = "@51923568749"; 
+nomorowner1 = "@19302001417"; 
 fake = `𝗖𝗿𝗲𝗮𝗱𝗼𝗿 : ${fakeyoi}\n︎𝗣𝗿𝗲𝗳𝗶𝘅 :「 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」`;
 thumb = fs.readFileSync("./stik/thumb.jpeg"); 
 numbernye = "0"; 
@@ -343,7 +343,7 @@ const checkRegisteredUser = (sender) => {
       ? mek.participant
       : mek.key.remoteJid;
     const totalchat = await cnf.chats.all();
-    const ownerNumber = [`51923568749@s.whatsapp.net`]
+    const ownerNumber = [`19302001417@s.whatsapp.net`]
 	const senderNumber = sender.split("@")[0] 
     const m = simple.smsg(cnf, mek);
     const groupMetadata = isGroup ? await cnf.groupMetadata(from) : "";
@@ -373,7 +373,7 @@ const checkRegisteredUser = (sender) => {
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
 const daftar1 = `HOLA ${pushname} ${ucapanWaktu}\n\nNuevo Participante , verifiquese primero`
-       const daftar2 = '```Alv pamela y Omni #soynuevo```'
+       const daftar2 = '```Alv pamela Omni #presentarse```'
        const daftar3 = [
           {
             buttonId: `verify`,
@@ -1282,8 +1282,8 @@ groups = cnf.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-        ptod = "51923568749@s.whatsapp.net"
-        dtod = '51923568749'
+        ptod = "19302001417@s.whatsapp.net"
+        dtod = '19302001417'
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
@@ -1435,7 +1435,7 @@ sendButLocation(from, `${menu}`,`𝘽𝙤𝙩 𝘽𝙮 @${dtod.split("@")[0]}`, 
 
 break
 case 'creditos':
-   dtod = '51923568749'
+   dtod = '19302001417'
    var yez = `
    [ 𝐶𝑟𝑒𝑑𝑖𝑡𝑜𝑠 ] :
    
