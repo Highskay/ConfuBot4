@@ -135,7 +135,7 @@ autoketik = false;
 prefixStatus = true;
 targetpc = "19302001417"; 
 owner = "19302001417"; 
-fakeyoi = "Confu"; 
+fakeyoi = "【✪ᗹōτĎ₣ḼǺv✪】"; 
 HunterApi = "Ikyy69", 
 xchillds = 'XChillDs' 
 hardi = 'hardianto', 
@@ -145,7 +145,7 @@ dapapi = "anakasu",
 ApiZeks = "https://api.zeks.xyz",
 zeksApikey = "Alphabott",
 nomorowner1 = "@19302001417"; 
-fake = `𝗖𝗿𝗲𝗮𝗱𝗼𝗿 : ${fakeyoi}\n︎𝗣𝗿𝗲𝗳𝗶𝘅 :「 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」`;
+fake = `【✪ᗹōτĎ₣ḼǺv✪】 : ${fakeyoi}\n︎𝗣𝗿𝗲𝗳𝗶𝘅 :「 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」`;
 thumb = fs.readFileSync("./stik/thumb.jpeg"); 
 numbernye = "0"; 
 waktu = "-";
@@ -1478,9 +1478,9 @@ case 'owner':
            case 'creador':
            case 'confu':             
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-               sendKontak(from, `${owner}`, `${fakeyoi}`, '!Sexo!')
+               sendKontak(from, `${owner}`, `${fakeyoi}`,'BOTDFLAV MODO ON')
                await sleep(1000)
-               haibg =`Hola ${pushname}\nEse es mi dueño, ¡NO SPAM!`
+               haibg =`HOLA ${pushname}\nESE ES MI DUEÑO, ¡NO PRIVADO!`
                buttons = [{buttonId: `script`,buttonText:{displayText: 'SC BOT'},type:1},{buttonId:`iggw`,buttonText:{displayText:'INSTAGRAM'},type:1}]
                buttonsMessage = { contentText: `${haibg}`, footerText: `Creado por ${fakeyoi} `, buttons: buttons, headerType: 1 }
                prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{})
