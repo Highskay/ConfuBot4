@@ -18,22 +18,22 @@ blocked = [];
 const { color } = require('./lib/color')
 const time2 = moment().tz("Asia/Jakarta").format("HH:mm:ss");
     if (time2 < "24:59:00") {
-      var ucapanWaktu = "Buenas Noches";
+      var ucapanWaktu = "Buenas chaval";
     }
     if (time2 < "19:00:00") {
-      var ucapanWaktu = "Buenas Tardes🌞";
+      var ucapanWaktu = "Buenas chaval";
     }
     if (time2 < "18:00:00") {
-      var ucapanWaktu = "Buenas Tardes🌄";
+      var ucapanWaktu = "Buenas chaval";
     }
     if (time2 < "15:00:00") {
-      var ucapanWaktu = "Buenas Tardes☀️";
+      var ucapanWaktu = "Buenas chaval";
     }
     if (time2 < "11:00:00") {
-      var ucapanWaktu = "Buenos días🌅";
+      var ucapanWaktu = "Buenos chaval";
     }
     if (time2 < "05:00:00") {
-      var ucapanWaktu = "Buenas Noches🌃";
+      var ucapanWaktu = "Buenas chaval";
     }
 const runtime = function (seconds) {
   seconds = Number(seconds);
@@ -143,7 +143,7 @@ console.log(` [ Grupo Cerrado ]  En ${metdata.subject}`)
 }
 else if(!anu.desc == ''){
 tag = anu.descOwner.split('@')[0] + '@s.whatsapp.net'
-teks = ` [ Nueva Descripción ] \n\n La Nnueva Descripción es :\n\n${anu.desc}`
+teks = ` [ REGLAS ] \n\n Las Reglas son :\n\n${anu.desc}`
 client.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [tag]}, quoted: fkontakk})
 console.log(`- [ NUEVA DESC ] - En ${metdata.subject}`)
   }
@@ -184,23 +184,31 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 anu_user = v.vname || v.notify || num.split('@')[0]
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
-                teks = `*┌──❀*̥˚──◌──◌──❀*̥˚──┐
+                teks = `*╭══•ೋ•✧♡๑✧•ೋx•══╮
 
-➣ @⁨+1(930)200-1417
 
-➣ *BIENVENID@*
+➣ @⁨1(930)200-1417 
 
-➣ *BOT RSDAZ*
 
-└◌──❀*̥˚───◌────❀*̥˚─┘
+➣ *ＢＩＥＮＶＥＮＩＤ@ ＡＬ ＧＲＵＰＯ*
 
-*HOLA* @${num.split('@')[0]}\n 👋🏻 *ESPERO QUE SE SIENTA COMO EN CASA*🍟🍭🍬
-  🍧🍦🍡
-*DISFRUTA DEL GRUPO* 🥳 SE RESPETUOSO,SOCIABLE Y APORTA 🤗 QUIZÁS ENCUENTRES EL AMOR*     🥺 👉🏻👈🏻💞♥️💞
-*LEE Y RESPETA LAS REGLAS POR FAVOR, PARA EVITAR MALOS ENTENDIDOS*
-*ＦＬＡＶＩＩＯ ＣＬ* 
-*ＬＥＥ ＬＡＳ ＲＥＧＬＡＳ ＡＱＵＩ👇🏻*`
-                welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'REGLASDELGRUPO'},type:1}]
+
+➣ 『 *ＢＯＴ ＢＡＤＤＥＳＴ*』
+
+
+╰══•ೋ•✧♡๑✧•ೋc•══╯
+
+*ＨＯＬＡ* @${num.split('@')[0]}\n 👋🏻 *
+*ＨＯＬＡ ＥＳＰＥＲＯ ＱＵＥ ＳＥ ＳＩＥＮＴＡ ＣＯＭＯ ＥＮ ＣＡＳＡ* 🥳
+🍧🥤🍟🍬🍿🍭
+ *ＤＩＳＦＲＵＴＥ ＥＬ ＧＲＵＰＯ ＰＡＳＡＬＡ ＢＩＥＮ ＳＥ ＲＥＳＰＥＴＵＯＳＯ*
+ *ＳＯＣＩＡＢＬＥ  ＱＵＩＺＡＳ ＥＮＣＵＥＮＴＲＥＳ ＥＬ ＡＭＯＲ*🥺👉🏻👈🏻💞♥️💞
+ *ＡＰＯＲＴＡ ＬＥＥ ＬＡＳ ＲＥＧＬＡＳ ＰＯＲ ＦＡＶＯＲ ＰＡＲＡ ＥＶＩＴＡＲ ＭＡＬＯＳ ＥＮＴＥＮＤＩＤＯＳ*⚔️💨
+*ＰＲＯＨＩＢＩＤＯ ＭＩＲＯＮＥＳ Ｏ ＦＡＮＴＡＳＭＯＮＥＳ* 👻
+ *5 ＭＩＮＵＴＯＳ ＲＥＳＴＡＮＴＥＳ ＰＡＲＡ ＳＯＣＩＡＬＩＺＡＲ Ｏ ＳＥＲＡ ＥＬＩＭＩＮＡＤＯ*😕👈🏻
+
+_L E E  L A S  R E G L A S  A Q U I  N O O B_👇🏻*`
+                welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'REGLAS DEL GRUPO BAN'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 client.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
                  }      
