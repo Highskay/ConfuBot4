@@ -93,7 +93,7 @@ const truth = JSON.parse(fs.readFileSync('./database/truth.json'))
 const dare = JSON.parse(fs.readFileSync('./database/dare.json'))
 //IMAGENES //
 const iye = fs.readFileSync('./stik/thumb.jpeg')
-const asw1 = 'https://i.ibb.co/kMjJPPH/Polish-20211114-133304526.jpg'
+const asw1 = 'https://i.ibb.co/C9p1Ygw/Polish-20211114-135304526.jpg'
 const sip = fs.readFileSync('./stik/oksip.jpeg')
 const bgg = fs.readFileSync('./stik/fake.jpeg')
 //// IMAGEN ///
@@ -944,7 +944,7 @@ sendEphemeral: false,
                 "title": `ConfuBot4\n•Instagram (@confumods)`,
                 "body": "",
                 "previewType": "PHOTO",
-                "thumbnailUrl": "https://i.ibb.co/kMjJPPH/Polish-20211114-133304526.jpg",
+                "thumbnailUrl": "https://i.ibb.co/C9p1Ygw/Polish-20211114-135304526.jpg",
                 "thumbnail": fake,
                 "sourceUrl": 'https://youtube.com/c/ConfuMods'
 },mentionedJid:[sender]}, quoted : fgif})
@@ -959,7 +959,7 @@ sendEphemeral: false,
                 "body": `wa.me/19302001417`,
                 "mediaType": "10",
                 "mediaUrl": `wa.me/19302001417`,
-                "thumbnailUrl": "https://i.ibb.co/kMjJPPH/Polish-20211114-133304526.jpg",
+                "thumbnailUrl": "https://i.ibb.co/C9p1Ygw/Polish-20211114-135304526.jpg",
                 "thumbnail": iye,
                 "sourceUrl": `wa.me/19302001417`,
 },mentionedJid:[sender]}, quoted : mek})
@@ -973,7 +973,7 @@ sendEphemeral: false,
 "title": `Hola ${pushname}` ,
 "body": `${ucapanWaktu}`,
 "mediaType": "2",
-"thumbnailUrl": "https://i.ibb.co/kMjJPPH/Polish-20211114-133304526.jpg",
+"thumbnailUrl": "https://i.ibb.co/C9p1Ygw/Polish-20211114-135304526.jpg",
 "mediaUrl": "https://youtube.com/c/ConfuMods",
 "thumbnail": fs.readFileSync('./stik/thumb.jpeg'),
 "sourceUrl": "",
@@ -1291,7 +1291,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `
-🌿 Hola @${sender.split("@")[0]}🌿
+ Hola @${sender.split("@")[0]}
 
 シ︎ 𝐆𝐫𝐮𝐩𝐨 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
 ㋛︎ 𝐏𝐫𝐢𝐯𝐚𝐝𝐨 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
@@ -1439,7 +1439,7 @@ case 'creditos':
    var yez = `
    [ 𝐶𝑟𝑒𝑑𝑖𝑡𝑜𝑠 ] :
    
- 🌿 : wa.me/${dtod.split('@')[0]}
+  : wa.me/${dtod.split('@')[0]}
  `
      credit = cnf.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 1000, "message": `${yez}`, "footerText": "By Confu", "thumbnail": iye, "surface": 'CATALOG'}}, {quoted: mek})
             cnf.relayWAMessage(credit)
@@ -1482,7 +1482,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                await sleep(1000)
                haibg =`Hola ${pushname}\nEse es mi dueño, ¡NO SPAM!`
                buttons = [{buttonId: `script`,buttonText:{displayText: 'SC BOT'},type:1},{buttonId:`iggw`,buttonText:{displayText:'INSTAGRAM'},type:1}]
-               buttonsMessage = { contentText: `${haibg}`, footerText: `Creado por ${fakeyoi} 🌿`, buttons: buttons, headerType: 1 }
+               buttonsMessage = { contentText: `${haibg}`, footerText: `Creado por ${fakeyoi} `, buttons: buttons, headerType: 1 }
                prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{})
                cnf.relayWAMessage(prep)
                break     
@@ -1556,7 +1556,7 @@ case 'buglink':
                 "title": `${virtex2(prefix)}`,
                 "body": "",
                 "previewType": "PHOTO",
-                "thumbnailUrl": "https://i.ibb.co/kMjJPPH/Polish-20211114-133304526.jpg",
+                "thumbnailUrl": "https://i.ibb.co/C9p1Ygw/Polish-20211114-135304526.jpg",
                 "thumbnail": fs.readFileSync(`./cnf.jpg`),
                 "sourceUrl": "https://youtube.com/c/ConfuMods"}}})
                 break
