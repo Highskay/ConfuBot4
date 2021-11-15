@@ -93,7 +93,7 @@ const truth = JSON.parse(fs.readFileSync('./database/truth.json'))
 const dare = JSON.parse(fs.readFileSync('./database/dare.json'))
 //IMAGENES //
 const iye = fs.readFileSync('./stik/thumb.jpeg')
-const asw1 = 'https://i.ibb.co/QJRWXb9/IMG-20211107-WA0044.jpg'
+const asw1 = 'https://i.ibb.co/kMjJPPH/Polish-20211114-133304526.jpg'
 const sip = fs.readFileSync('./stik/oksip.jpeg')
 const bgg = fs.readFileSync('./stik/fake.jpeg')
 //// IMAGEN ///
@@ -944,7 +944,7 @@ sendEphemeral: false,
                 "title": `ConfuBot4\n•Instagram (@confumods)`,
                 "body": "",
                 "previewType": "PHOTO",
-                "thumbnailUrl": "https://i.ibb.co/QJRWXb9/IMG-20211107-WA0044.jpg",
+                "thumbnailUrl": "https://i.ibb.co/kMjJPPH/Polish-20211114-133304526.jpg",
                 "thumbnail": fake,
                 "sourceUrl": 'https://youtube.com/c/ConfuMods'
 },mentionedJid:[sender]}, quoted : fgif})
@@ -956,12 +956,12 @@ isForwarded: false,
 sendEphemeral: false,
 "externalAdReply": {
                 "title": `WhatsApp`,
-                "body": `wa.me/51923568749`,
+                "body": `wa.me/19302001417`,
                 "mediaType": "10",
-                "mediaUrl": `wa.me/51923568749`,
-                "thumbnailUrl": "https://i.ibb.co/QJRWXb9/IMG-20211107-WA0044.jpg",
+                "mediaUrl": `wa.me/19302001417`,
+                "thumbnailUrl": "https://i.ibb.co/kMjJPPH/Polish-20211114-133304526.jpg",
                 "thumbnail": iye,
-                "sourceUrl": `wa.me/51923568749`,
+                "sourceUrl": `wa.me/19302001417`,
 },mentionedJid:[sender]}, quoted : mek})
 };
 const fakeyt = (teks) => {
@@ -973,7 +973,7 @@ sendEphemeral: false,
 "title": `Hola ${pushname}` ,
 "body": `${ucapanWaktu}`,
 "mediaType": "2",
-"thumbnailUrl": "https://i.ibb.co/QJRWXb9/IMG-20211107-WA0044.jpg",
+"thumbnailUrl": "https://i.ibb.co/kMjJPPH/Polish-20211114-133304526.jpg",
 "mediaUrl": "https://youtube.com/c/ConfuMods",
 "thumbnail": fs.readFileSync('./stik/thumb.jpeg'),
 "sourceUrl": "",
@@ -1217,7 +1217,7 @@ const serialUser = createSerial(18)
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
              buttons = [{buttonId: `menu`,buttonText:{displayText: `MENU`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
-              buttonsMessage = {footerText:'BotDFlavi0', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'BotDFlav', imageMessage: imageMsg,
               contentText:`${anuu}`,buttons,headerType:4}
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: fkontak})
               cnf.relayWAMessage(prep)
@@ -1470,7 +1470,7 @@ reply(`${mek.quoted.caption}`)
 break
 case 'iggw':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-  reply('https://www.instagram.com/confumods')
+  reply('https://www.instagram.com')
 break
    
 case 'owner':
@@ -1556,7 +1556,7 @@ case 'buglink':
                 "title": `${virtex2(prefix)}`,
                 "body": "",
                 "previewType": "PHOTO",
-                "thumbnailUrl": "https://i.ibb.co/QJRWXb9/IMG-20211107-WA0044.jpg",
+                "thumbnailUrl": "https://i.ibb.co/kMjJPPH/Polish-20211114-133304526.jpg",
                 "thumbnail": fs.readFileSync(`./cnf.jpg`),
                 "sourceUrl": "https://youtube.com/c/ConfuMods"}}})
                 break
