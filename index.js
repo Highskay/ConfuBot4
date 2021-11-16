@@ -1213,7 +1213,7 @@ const serialUser = createSerial(18)
 *☂︎ Serial:* ${serialUser}
 *☂ ︎Total:* ${_registered.length} User
 
-*「 BOTDFLAV 」*`
+*「 【✪ᗹōτĎ₣ḼǺv✪】 」*`
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
              buttons = [{buttonId: `menu`,buttonText:{displayText: `MENU`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
@@ -1478,7 +1478,7 @@ case 'owner':
            case 'creador':
            case 'confu':             
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-               sendKontak(from, `${owner}`, `${fakeyoi}`,'BOTDFLAV MODO ON')
+               sendKontak(from, `${owner}`, `${fakeyoi}`,'【✪ᗹōτĎ₣ḼǺv✪】')
                await sleep(1000)
                haibg =`HOLA ${pushname}\nESE ES MI DUEÑO, ¡NO PRIVADO!`
                buttons = [{buttonId: `script`,buttonText:{displayText: 'SC BOT'},type:1},{buttonId:`iggw`,buttonText:{displayText:'INSTAGRAM'},type:1}]
@@ -1764,11 +1764,11 @@ case 'command':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
  listMsg = {
  buttonText: '𝗟𝗜𝗦𝗧 𝗠𝗘𝗡𝗨',
- footerText: 'BOTDFLAV',
+ footerText: '【✪ᗹōτĎ₣ḼǺv✪】',
  description: `Hola @${sender.split('@')[0]}, Seleccione el menú aquí`,
  sections: [
                      {
-                      "title": `ConfuBot4`,
+                      "title": `【✪ᗹōτĎ₣ḼǺv✪】`,
  rows: [
                            {
                               "title": "Speed",
@@ -1826,7 +1826,7 @@ menu = `🌿𝘔𝘦𝘯𝘶 𝘥𝘦 𝘋𝘦𝘴𝘤𝘢𝘳𝘨𝘢𝘴🌿
 
 🌿${prefix}twitter <link>
 `
-sendButMessage(from, menu, `BOTDFLAV`, [
+sendButMessage(from, menu, `【✪ᗹōτĎ₣ḼǺv✪】`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -1863,7 +1863,7 @@ menu = `🌿𝘎𝘳𝘶𝘱𝘰 𝘔𝘦𝘯𝘶︎🌿
 
 🌿${prefix}autojoin
 `
-sendButMessage(from, menu, ` BOTDFLAV`, [
+sendButMessage(from, menu, ` 【✪ᗹōτĎ₣ḼǺv✪】`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -1918,7 +1918,7 @@ menu = `シ︎𝘊𝘳𝘦𝘢𝘥𝘰𝘳 𝘔𝘦𝘯𝘶シ︎
 
 🌿${prefix}eval <code>
 `
-sendButMessage(from, menu, ` BOTDFLAV`, [
+sendButMessage(from, menu, ` 【✪ᗹōτĎ₣ḼǺv✪】`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -2022,7 +2022,7 @@ menu = `🌿Creador Menu🌿
 
 🌿${prefix}waifu
 `
-sendButMessage(from, menu, ` BOTDFLAV`, [
+sendButMessage(from, menu, ` 【✪ᗹōτĎ₣ḼǺv✪】`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -3597,7 +3597,7 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
         let di = await getBuffer(ac);
 buttons = [{buttonId: `pinterest ${q}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(di, "imageMessage", { thumbnail: di, })).imageMessage
-              buttonsMessage = {footerText:'BOTDFLAV', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'【✪ᗹōτĎ₣ḼǺv✪】', imageMessage: imageMsg,
               contentText:`Nota : no agan spam`,buttons,headerType:4}
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               cnf.relayWAMessage(prep)
@@ -3977,7 +3977,7 @@ case 'waifu':
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
 		      buttons = [{buttonId: `waifu`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = ( await cnf.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
-              buttonsMessage = {footerText:'No olvides donar ok no xd☕', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'QUIERO SER ADMIN', imageMessage: imageMsg,
               contentText:`Click Next`,buttons,headerType:4}
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               cnf.relayWAMessage(prep)
