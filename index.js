@@ -1241,11 +1241,11 @@ groups = cnf.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`HOLA! ${pushname} 👋🏻\n\n*RESPETA LAS REGLAS*
+       txtt =`HOLA ${pushname} 👋🏻\n\n*RESPETA LAS REGLAS*
 _NO QUEREMOS MIRONES MMGVO!!_
 _AHORA PRESENTARSE O SERA ELIMINADO_ 💀
 _COMO USAR EL BOT_
-_QUESTION_👇🏻 `
+_QUESTION_👇🏻`
                buttons = [{buttonId:`allmenu`, 
                buttonText:{displayText: 'MENU'},type:1},
                {buttonId:`owner`,buttonText:{displayText:'CREADOR'},type:1},
