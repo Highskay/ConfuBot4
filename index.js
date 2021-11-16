@@ -1241,11 +1241,8 @@ groups = cnf.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`HOLA ${pushname} 👋🏻\n\n*RESPETA LAS REGLAS*
-_NO QUEREMOS MIRONES MMGVO!!_
-_AHORA PRESENTARSE O SERA ELIMINADO_ 💀
-_COMO USAR EL BOT_
-_QUESTION_👇🏻`
+       txtt =`HOLA! ${pushname} 👋🏻\n\nRESPETA LAS REGLAS`
+
                buttons = [{buttonId:`allmenu`, 
                buttonText:{displayText: 'MENU'},type:1},
                {buttonId:`owner`,buttonText:{displayText:'CREADOR'},type:1},
@@ -1256,8 +1253,8 @@ _QUESTION_👇🏻`
 
                buttonsMessage = {
                contentText: `${txtt}`,
-               footerText: ` 𝙀𝙨𝙩𝙖𝙙𝙤                
- 
+               footerText: ` 𝙀𝙨𝙩𝙖𝙙𝙤 
+               
 prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: fkontak})
                cnf.relayWAMessage(prep)
              
