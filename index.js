@@ -373,7 +373,7 @@ const checkRegisteredUser = (sender) => {
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
 const daftar1 = `HOLA ${pushname} ${ucapanWaktu}\n\nNuevo Participante , verifiquese primero`
-       const daftar2 = '```Alv pamela Omni #presentarse```'
+       const daftar2 = '```Alv Pamela Omni LESBIANASSS XD #nuevopresentarse```'
        const daftar3 = [
           {
             buttonId: `verify`,
@@ -1217,7 +1217,7 @@ const serialUser = createSerial(18)
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
              buttons = [{buttonId: `menu`,buttonText:{displayText: `MENU`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
-              buttonsMessage = {footerText:'BotDFlav', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'【✪ᗹōτĎ₣ḼǺv✪】', imageMessage: imageMsg,
               contentText:`${anuu}`,buttons,headerType:4}
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: fkontak})
               cnf.relayWAMessage(prep)
@@ -1253,7 +1253,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 
                buttonsMessage = {
                contentText: `${txtt}`,
-               footerText: `🌿︎ 𝙀𝙨𝙩𝙖𝙙𝙤 🌿
+               footerText: `【✪ᗹōτĎ₣ḼǺv✪】
                
  𝐆𝐫𝐮𝐩𝐨 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
  𝐏𝐫𝐢𝐯𝐚𝐝𝐨 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
@@ -1817,14 +1817,14 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 cnf.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:ftrol})
 break
 case 'downloadmenu':
-menu = `🌿𝘔𝘦𝘯𝘶 𝘥𝘦 𝘋𝘦𝘴𝘤𝘢𝘳𝘨𝘢𝘴🌿
-🌿${prefix}play texto
+menu = `【✪ᗹōτĎ₣ḼǺv✪】
+${prefix}play texto
 
-🌿${prefix}play2 texto
+${prefix}play2 texto
 
-🌿${prefix}instagram <link>
+${prefix}instagram <link>
 
-🌿${prefix}twitter <link>
+${prefix}twitter <link>
 `
 sendButMessage(from, menu, `【✪ᗹōτĎ₣ḼǺv✪】`, [
           {
@@ -1836,32 +1836,32 @@ sendButMessage(from, menu, `【✪ᗹōτĎ₣ḼǺv✪】`, [
           },]);
 break
 case 'groupmenu':
-menu = `🌿𝘎𝘳𝘶𝘱𝘰 𝘔𝘦𝘯𝘶︎🌿
-🌿${prefix}grupo
+menu = `【✪ᗹōτĎ₣ḼǺv✪】
+${prefix}grupo
 
-🌿${prefix}promote @tag
+${prefix}promote @tag
 
-🌿${prefix}demote @tagAdmin
+${prefix}demote @tagAdmin
 
-🌿${prefix}nsfw 1/0
+${prefix}nsfw 1/0
 
-🌿${prefix}kick @tag
+${prefix}kick @tag
 
-🌿${prefix}add numero
+${prefix}add numero
 
-🌿${prefix}getbio
+${prefix}getbio
 
 🌿${prefix}getname
 
-🌿${prefix}alarma
+${prefix}alarma
 
-🌿${prefix}listonline
+${prefix}listonline
 
-🌿${prefix}antilink
+${prefix}antilink
 
-🌿${prefix}tod 
+${prefix}tod 
 
-🌿${prefix}autojoin
+${prefix}autojoin
 `
 sendButMessage(from, menu, ` 【✪ᗹōτĎ₣ḼǺv✪】`, [
           {
@@ -1874,49 +1874,49 @@ sendButMessage(from, menu, ` 【✪ᗹōτĎ₣ḼǺv✪】`, [
 break
 case 'ownermenu':
 menu = `シ︎𝘊𝘳𝘦𝘢𝘥𝘰𝘳 𝘔𝘦𝘯𝘶シ︎
-🌿${prefix}off
+${prefix}off
 
-🌿${prefix}isbaileys
+${prefix}isbaileys
 
-🌿${prefix}banchat
+${prefix}banchat
 
-🌿${prefix}unbanchat
+${prefix}unbanchat
 
-🌿${prefix}listbc
+${prefix}listbc
 
-🌿${prefix}antidelete on/off
+${prefix}antidelete on/off
 
-🌿${prefix}autotype on/off
+${prefix}autotype on/off
 
-🌿${prefix}autoread
+${prefix}autoread
 
-🌿${prefix}autovn on/off
+${prefix}autovn on/off
 
-🌿${prefix}anticall on/off
+${prefix}anticall on/off
 
-🌿${prefix}getcaption
+${prefix}getcaption
 
-🌿${prefix}bugcatalog
+${prefix}bugcatalog
 
-🌿${prefix}on
+${prefix}on
 
-🌿${prefix}status
+${prefix}status
 
-🌿${prefix}setthumb
+${prefix}setthumb
 
-🌿${prefix}settarget
+${prefix}settarget
 
-🌿${prefix}setfakeimg
+${prefix}setfakeimg
 
-🌿${prefix}setreply
+${prefix}setreply
 
-🌿${prefix}setprefix
+${prefix}setprefix
 
-🌿${prefix}modo
+${prefix}modo
 
-🌿${prefix}term <code>
+${prefix}term <code>
 
-🌿${prefix}eval <code>
+${prefix}eval <code>
 `
 sendButMessage(from, menu, ` 【✪ᗹōτĎ₣ḼǺv✪】`, [
           {
@@ -1931,51 +1931,51 @@ case 'othermenu':
 menu = `🌿𝘔𝘦𝘯𝘶 𝘷𝘢𝘳𝘪𝘢𝘥𝘰🌿
 🌿${prefix}ping
 
-🌿${prefix}inspect
+${prefix}inspect
 
-🌿${prefix}join
+${prefix}join
 
-🌿${prefix}quote
+${prefix}quote
 
-🌿${prefix}write text
+${prefix}write text
 
-🌿${prefix}writeleft text
+${prefix}writeleft text
 
-🌿${prefix}folioleft text
+${prefix}folioleft text
 
-🌿${prefix}folioright text
+${prefix}folioright text
 
-🌿${prefix}songlyrics <texto>
+${prefix}songlyrics <texto>
 
-🌿${prefix}loli 
+${prefix}loli 
 
-🌿${prefix}debug
+${prefix}debug
 
-🌿${prefix}chat 598|texto
+${prefix}chat 598|texto
 
-🌿${prefix}get url
+${prefix}get url
 
-🌿${prefix}ytsearch <texto>
+${prefix}ytsearch <texto>
 
-🌿${prefix}play <texto>
+${prefix}play <texto>
 
-🌿${prefix}video <texto>
+${prefix}video <texto>
 
-🌿${prefix}igstory <nombre de usuario>
+${prefix}igstory <nombre de usuario>
 
-🌿${prefix}twitter <link>
+${prefix}twitter <link>
 
-🌿${prefix}image <texto>
+${prefix}image <texto>
 
-🌿${prefix}anime <random>
+${prefix}anime <random>
 
-🌿${prefix}pinterest <texto>
+${prefix}pinterest <texto>
 
-🌿${prefix}lyrics <texto>
+${prefix}lyrics <texto>
 
-🌿${prefix}playstore <texto>
+${prefix}playstore <texto>
 `
-sendButMessage(from, menu, ` BOTDFLAV`, [
+sendButMessage(from, menu, ` 【✪ᗹōτĎ₣ḼǺv✪】`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -1985,42 +1985,42 @@ sendButMessage(from, menu, ` BOTDFLAV`, [
           },]);
 break
 case 'makermenu':
-menu = `🌿Creador Menu🌿
-🌿${prefix}𝙨𝙩𝙞𝙘𝙠𝙚𝙧
+menu = `Creador Menu
+${prefix}𝙨𝙩𝙞𝙘𝙠𝙚𝙧
 
-🌿${prefix}𝙧𝙤𝙗𝙖𝙧 <𝙖𝙪𝙩𝙝𝙤𝙧|𝙥𝙖𝙘𝙠𝙣𝙖𝙢𝙚>
+${prefix}𝙧𝙤𝙗𝙖𝙧 <𝙖𝙪𝙩𝙝𝙤𝙧|𝙥𝙖𝙘𝙠𝙣𝙖𝙢𝙚>
 
-🌿${prefix}attp text
+${prefix}attp text
 
-🌿${prefix}emoji
+${prefix}emoji
 
-🌿${prefix}golden text
+${prefix}golden text
 
-🌿${prefix}flower text
+${prefix}flower text
 
-🌿${prefix}wooden text
+${prefix}wooden text
 
-🌿${prefix}burn text
+${prefix}burn text
 
-🌿${prefix}glow text
+${prefix}glow text
 
-🌿${prefix}summer text
+${prefix}summer text
 
-🌿${prefix}neon text
+${prefix}neon text
 
-🌿${prefix}coffeecup2 text
+${prefix}coffeecup2 text
 
-🌿${prefix}coffeecup text
+${prefix}coffeecup text
 
-🌿${prefix}battlefield text|text
+${prefix}battlefield text|text
 
-🌿${prefix}googletxt2 text|text
+${prefix}googletxt2 text|text
 
-🌿${prefix}transformer text|text
+${prefix}transformer text|text
 
-🌿${prefix}write text
+${prefix}write text
 
-🌿${prefix}waifu
+${prefix}waifu
 `
 sendButMessage(from, menu, ` 【✪ᗹōτĎ₣ḼǺv✪】`, [
           {
