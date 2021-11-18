@@ -210,7 +210,7 @@ _A P O R T A  L E E  L A S  R E G L A S  P O R_
 _F A V O R  P A R A  E V I T A R  M A L O S_
 _E N T E N D I D O S_ ⚔️
 
-🚫_N O  Q U E R E M O S   M I R O N E S_ 😠
+🚫 _N O  Q U E R E M O S   M I R O N E S_ 😠
 
 _A H O R A  P R E S E N T A R S E  O  S E R A_
 _E L I M I N A D O_ 🥺
