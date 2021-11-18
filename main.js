@@ -222,12 +222,6 @@ _L E E  L A S  R E G L A S  A Q U I  N O O B_👇🏻`
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 client.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
 
-                welcomeBut = [{buttonId:`script`,buttonText:{displayText:'HOLA SOY NUEVO'},type:1}], [{buttonId:`script`,buttonText:{displayText:'HOLA SOY NUEVA'},type:1}]
-                welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
-                client.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
-
-       } catch (e) {
-
       if (anu.action == "promote") {
         const mdata = await client.groupMetadata(anu.jid);
         num = anu.participants[0];
