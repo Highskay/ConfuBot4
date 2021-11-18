@@ -1470,7 +1470,7 @@ reply(`${mek.quoted.caption}`)
 break
 case 'iggw':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-  reply('https://www.instagram.com')
+  reply('https://www.instagram/Quemdahaces56nojuegesconelbotcarajo.com')
 break
    
 case 'owner':
@@ -1851,7 +1851,7 @@ ${prefix}add numero
 
 ${prefix}getbio
 
-🌿${prefix}getname
+${prefix}getname
 
 ${prefix}alarma
 
