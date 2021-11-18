@@ -210,7 +210,7 @@ _A P O R T A  L E E  L A S  R E G L A S  P O R_
 _F A V O R  P A R A  E V I T A R  M A L O S_
 _E N T E N D I D O S_ ⚔️
 
-🚫 _N O  Q U E R E M O S   M I R O N E S_ 😠
+_N O  Q U E R E M O S   M I R O N E S_ 😠
 
 _A H O R A  P R E S E N T A R S E  O  S E R A_
 _E L I M I N A D O_ 🥺
@@ -219,9 +219,9 @@ _P A M E L A  I N V I T A  H I E R B A_ ? 😳
 
 _L E E  L A S  R E G L A S  A Q U I  N O O B_👇🏻`
                 welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'👉🏻 RESPETA LAS REGLAS 👈🏻'},type:1}]
-                welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
+                welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 client.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
-
+                 }      
       if (anu.action == "promote") {
         const mdata = await client.groupMetadata(anu.jid);
         num = anu.participants[0];
