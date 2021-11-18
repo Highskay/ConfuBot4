@@ -226,8 +226,7 @@ _L E E  L A S  R E G L A S  A Q U I  N O O B_👇🏻`
                buttonsMessage = { contentText: `${haibg}`, footerText: `Creado por ${fakeyoi} `, buttons: buttons, headerType: 1 }
                prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{})
                cnf.relayWAMessage(prep)
-               break              }
-      
+
       if (anu.action == "promote") {
         const mdata = await client.groupMetadata(anu.jid);
         num = anu.participants[0];
