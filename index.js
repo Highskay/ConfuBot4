@@ -2887,7 +2887,7 @@ break
         ]);
         break;
 
-      case "grupo":
+      case "grupochido":
         if (!isGroupAdmins) return reply('solo el administrador puede usar esta función')
         sendButMessage(from, `AJUSTES DE GRUPO`, `Por favor elige uno`, [
           {
