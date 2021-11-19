@@ -2344,7 +2344,7 @@ if (!isGroup) return reply(`*Solo puede ser utilizado en grupos*`)
           return reply("el mensaje que respondió no contiene una respuesta!");
         await qse.quoted.copyNForward(m.chat, true);
         break;
-      case "kick":
+      case "tematoperra":
         if (!isGroup) return reply('esta función es solo para grupos');
         if (!isGroupAdmins && !mek.key.fromMe) return reply('Solo puede ser utilizado por un administrador can use this feature');
         if (!isBotGroupAdmins) return reply("No soy administrador");
