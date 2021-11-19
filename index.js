@@ -415,7 +415,7 @@ cmhit.push(command)
     //MESS
     mess = {
       wait: "𝗣𝗼𝗿 𝗳𝗮𝘃𝗼𝗿 𝗲𝘀𝗽𝗲𝗿𝗲 ± 𝘂𝗻 𝗺𝗶𝗻𝘂𝘁𝗼︎",
-      success: "𝗟𝗶𝘀𝘁𝗼 𝘅𝗱︎",
+      success: "*ELIMINADO, QUIEN SIGUE?*",
       wrongFormat: "Formato incorrecto, inténtalo de nuevo en el menú",
       error: {
         stick: "no es un sticker :v",
@@ -1243,10 +1243,10 @@ groups = cnf.chats.array.filter(v => v.jid.endsWith('g.us'))
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
        txtt =`HOLA! ${pushname} 👋🏻\n\nRESPETA LAS REGLAS`
 
-               buttons = [{buttonId:`allmenu`, 
+               buttons = [{buttonId:`opengc`, 
                buttonText:{displayText: 'MENU'},type:1},
                {buttonId:`owner`,buttonText:{displayText:'CREADOR'},type:1},
-               {buttonId:`owner`,buttonText:{displayText:'LIST MENU'},type:1}]
+               {buttonId:`opengc`,buttonText:{displayText:'LIST MENU'},type:1}]
 
 
                imageMsg = (await cnf.prepareMessageMedia(fs.readFileSync(`./stik/oksip.jpeg`), 'imageMessage', {thumbnail: fs.readFileSync(`./stik/oksip.jpeg`)})).imageMessage
@@ -2102,7 +2102,7 @@ break
 					case 'tagall':
 					if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 					if (!isGroup) return reply('esta función es solo para grupos')
-					if (!isGroupAdmins) return reply('solo el administrador puede usar esta función')
+					if (!isGroupAdmins) return reply('*Solo los Admin puede usar esta función*')
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
@@ -2493,7 +2493,7 @@ case 'linkwa':
         reply("```El link de el grupo ah sido renovado```");
         break;
       case "opengc":
-        if (!isGroupAdmins) return reply("Solo puede ser utilizado por un administrador");
+        if (!isGroupAdmins) return reply("*Solo puede ser utilizado por los Admin*");
         if (!isBotGroupAdmins) return reply("Bot no es administrador");
         if (!isGroup) return;
         reply(`*GRUPO ABIERTO*`);
