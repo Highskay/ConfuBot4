@@ -445,7 +445,7 @@ const math = (teks) => {
            return Math.floor(teks)
        }
 /*const reply = (teks) => {
-			cnf.sendMessage(from, teks, text, { thumbnail: iye, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `${jam} - ${week} ${weton} - ${date}`,body:"",previewType:"PHOTO",thumbnail:iye,sourceUrl:`https://wa.me/51923568749?text=ola%20UwU`}}})
+			cnf.sendMessage(from, teks, text, { thumbnail: iye, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `${jam} - ${week} ${weton} - ${date}`,body:"",previewType:"PHOTO",thumbnail:iye,sourceUrl:`https://wa.me/19302001417?text=ola%20UwU`}}})
 		}*/
     const sendMess = (hehe, teks) => {
       cnf.sendMessage(hehe, teks, text);
@@ -546,7 +546,7 @@ const finv = {
     };
     const fvn = {
       key: {
-        participant: `51923568749@s.whatsapp.net`,
+        participant: `19302001417@s.whatsapp.net`,
         ...(from ? { remoteJid: "6289643739077-1613049930@g.us" } : {}),
       },
       message: {
@@ -613,7 +613,7 @@ const fstick = {
 const fvid = {
 	 key: { 
           fromMe: false,
-	      participant: `51923568749@s.whatsapp.net`, ...(from ? 
+	      participant: `19302001417@s.whatsapp.net`, ...(from ? 
 	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
                 },
 	 message: { 
@@ -933,7 +933,7 @@ const reply = (teks) => {
              cnf.relayWAMessage(res)
         }
 const fakewa = (teks) => {        
-cnf.sendMessage(from, teks, text, { thumbnail: fake, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `ConfuBot4`,body:"",previewType:"PHOTO",thumbnail:iye,sourceUrl:`https://wa.me/51923568749?text=hola%20confu`}}})
+cnf.sendMessage(from, teks, text, { thumbnail: fake, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `ConfuBot4`,body:"",previewType:"PHOTO",thumbnail:iye,sourceUrl:`https://wa.me/19302001417?text=hola%20confu`}}})
 		}
 const replyfakelink = (teks) => {
 cnf.sendMessage(from, teks, text,{contextInfo :{text: 'Hola',
