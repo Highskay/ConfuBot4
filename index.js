@@ -1333,11 +1333,11 @@ ${readmore}
  
 
  ⬣ 𝙂𝙧𝙪𝙥𝙤
-> ⬡ ${prefix}grupo
+> ⬡ ${prefix}grupochido
 > ⬡ ${prefix}promote 
 > ⬡ ${prefix}demote 
 > ⬡ ${prefix}nsfw 1/0
-> ⬡ ${prefix}kick 
+> ⬡ ${prefix}Killgei 
 > ⬡ ${prefix}add 
 > ⬡ ${prefix}getbio
 > ⬡ ${prefix}getname 
@@ -1481,7 +1481,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                sendKontak(from, `${owner}`, `${fakeyoi}`,'【✪ᗹōτĎ₣ḼǺv✪】')
                await sleep(1000)
                haibg =`HOLA ${pushname}\nESE ES MI DUEÑO, ¡NO PRIVADO!`
-               buttons = [{buttonId: `script`,buttonText:{displayText: 'SC BOT'},type:1},{buttonId:`iggw`,buttonText:{displayText:'INSTAGRAM'},type:1}]
+               buttons = [{buttonId: `script`,buttonText:{displayText: 'SER ADMIN'},type:1},{buttonId:`iggw`,buttonText:{displayText:'INSTAGRAM'},type:1}]
                buttonsMessage = { contentText: `${haibg}`, footerText: `Creado por ${fakeyoi} `, buttons: buttons, headerType: 1 }
                prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{})
                cnf.relayWAMessage(prep)
@@ -1928,8 +1928,8 @@ sendButMessage(from, menu, ` 【✪ᗹōτĎ₣ḼǺv✪】`, [
           },]);
 break
 case 'othermenu':
-menu = `🌿𝘔𝘦𝘯𝘶 𝘷𝘢𝘳𝘪𝘢𝘥𝘰🌿
-🌿${prefix}ping
+menu = `𝘔𝘦𝘯𝘶 𝘷𝘢𝘳𝘪𝘢𝘥𝘰
+${prefix}ping
 
 ${prefix}inspect
 
