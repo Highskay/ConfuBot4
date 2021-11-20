@@ -379,7 +379,7 @@ const daftar1 = `*HOLA* ${pushname} ${ucapanWaktu}\n\n*Nuevo miembro del grupo,*
           {
             buttonId: `verify`,
             buttonText: {
-              displayText: `HOLASOYNUEVO`,
+              displayText: `Holasoynuevo`,
             },
             type: 1,
           },]
@@ -1195,7 +1195,7 @@ await cnf.setStatus(`Bot activado desde ${uptime}`).catch((_) => _);
     }
     if (!mek.key.fromMe && banChats === true) return;
 switch (command) {
-case 'HOLASOYNUEVO':              
+case 'Holasoynuevo':              
 if (isRegistered) return reply('Tu cuenta está verificada')
 const serialUser = createSerial(18)
 	         try {
@@ -1242,7 +1242,7 @@ groups = cnf.chats.array.filter(v => v.jid.endsWith('g.us'))
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
        txtt =`*HOLA!* ${pushname} 👋🏻\n\n*RESPETA LAS REGLAS*
-               *EL MENU👇🏻* *NO DISRESPECT O SERA ELIMINADO*`
+               *MENU👇🏻* *NO DISRESPECT O SERA ELIMINADO*`
 
                buttons = [{buttonId:`closegc`, 
                buttonText:{displayText: 'MENU'},type:1},
@@ -1465,7 +1465,7 @@ reply(`${mek.quoted.caption}`)
 break
 case 'iggw':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-  reply('https://www.instagram/Quemdahaces56nojuegesconcom')
+  reply('https://www.instagram/Quemdahaces56.com')
 break
    
 case 'owner':
@@ -2208,7 +2208,7 @@ break
                    anu = await getBuffer(`${ApiZeks}/api/breakwall?apikey=${zeksApikey}&text=${F}`)
                    cnf.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `Listo`, quoted: mek})
                    break
-      case "antilink":
+      case "Cn":
         if (!isGroup) return reply("Solo puede ser utilizado en Grupos");
         if (!isGroupAdmins && !mek.key.fromMe) return reply("Solo puede ser utilizado por un administrador");
         if (args[0] == "on") {
