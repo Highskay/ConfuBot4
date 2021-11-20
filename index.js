@@ -1255,7 +1255,9 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 
                buttonsMessage = {
                contentText: `${txtt}`,
-               footerText: `【✪ᗹōτĎ₣ḼǺv✪】
+               footerText: `【✪ᗹōτĎ₣ḼǺv✪】`,imageMessage: imageMsg,
+               buttons: buttons,
+               headerType: 4
 }
 
 prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: fkontak})
