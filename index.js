@@ -99,22 +99,22 @@ const bgg = fs.readFileSync('./stik/fake.jpeg')
 //// IMAGEN ///
 const time2 = moment().tz("Asia/Jakarta").format("HH:mm:ss");
     if (time2 < "24:59:00") {
-      var ucapanWaktu = "Buenas Noches";
+      var ucapanWaktu = "Buenas Dias";
     }
     if (time2 < "19:00:00") {
-      var ucapanWaktu = "Buenas Noches😼";
+      var ucapanWaktu = "*Buenas Dias*😼";
     }
     if (time2 < "18:00:00") {
-      var ucapanWaktu = "Buenas Tardes😼";
+      var ucapanWaktu = "*Buenas Dias*😼";
     }
     if (time2 < "15:00:00") {
-      var ucapanWaktu = "Buenas Tardes😼";
+      var ucapanWaktu = "*Buenas Noches*😼";
     }
     if (time2 < "11:00:00") {
-      var ucapanWaktu = "Buenos Días😼";
+      var ucapanWaktu = "*Buenas Noches*😼";
     }
     if (time2 < "05:00:00") {
-      var ucapanWaktu = "Buenas Tardes😼";
+      var ucapanWaktu = "*Buenas Noches*😼";
     }
  // BATAS \\
 menusimpel = false
@@ -372,8 +372,9 @@ const checkRegisteredUser = (sender) => {
     if (prefix && command) cmdadd();
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
-const daftar1 = `HOLA ${pushname} ${ucapanWaktu}\n\nNuevo Participante , verifiquese primero`
-       const daftar2 = '```Alv Pamela Omni LESBIANASSS XD #nuevopresentarse```'
+const daftar1 = `*HOLA* ${pushname} ${ucapanWaktu}\n\n*Nuevo miembro del grupo* , *verifiquese primero, lee las reglas no spam*`
+
+       const daftar2 = '```Alv Pamela Omni HERMOSAS XD #losnuevospresentarse```'
        const daftar3 = [
           {
             buttonId: `verify`,
@@ -1241,7 +1242,7 @@ groups = cnf.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`HOLA! ${pushname} 👋🏻\n\nRESPETA LAS REGLAS`
+       txtt =`HOLA! ${pushname} 👋🏻\n\n*RESPETA LAS REGLAS*`
 
                buttons = [{buttonId:`opengc`, 
                buttonText:{displayText: 'MENU'},type:1},
@@ -1254,16 +1255,9 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                buttonsMessage = {
                contentText: `${txtt}`,
                footerText: `【✪ᗹōτĎ₣ḼǺv✪】
-               
- 𝐆𝐫𝐮𝐩𝐨 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
- 𝐏𝐫𝐢𝐯𝐚𝐝𝐨 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
- 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
- 𝐕𝐞𝐥𝐨𝐜𝐢𝐝𝐚𝐝 : ${latensie.toFixed(4)} _Second_
- 𝐀𝐜𝐭𝐢𝐯𝐨 : ${runtime(process.uptime())}
- 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦𝐚 : ${os.platform()}`, imageMessage: imageMsg,
-               buttons: buttons,
-               headerType: 4
-}
+
+              *USE EL BOT 111119999 COMANDOS👇🏻*
+
 prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: fkontak})
                cnf.relayWAMessage(prep)
              
@@ -1480,8 +1474,8 @@ case 'owner':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
                sendKontak(from, `${owner}`, `${fakeyoi}`,'【✪ᗹōτĎ₣ḼǺv✪】')
                await sleep(1000)
-               haibg =`HOLA ${pushname}\nESE ES MI DUEÑO, ¡NO PRIVADO!`
-               buttons = [{buttonId: `script`,buttonText:{displayText: 'SER ADMIN'},type:1},{buttonId:`iggw`,buttonText:{displayText:'INSTAGRAM'},type:1}]
+               haibg =`*HOLA* ${pushname}\n*ESE ES MI DUEÑO,* ¡*NO PRIVADO*!`
+               buttons = [{buttonId: `script`,buttonText:{displayText: 'QUIERO SER ADMIN!'},type:1},{buttonId:`iggw`,buttonText:{displayText:'INSTAGRAM'},type:1}]
                buttonsMessage = { contentText: `${haibg}`, footerText: `Creado por ${fakeyoi} `, buttons: buttons, headerType: 1 }
                prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{})
                cnf.relayWAMessage(prep)
