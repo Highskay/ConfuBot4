@@ -372,7 +372,7 @@ const checkRegisteredUser = (sender) => {
     if (prefix && command) cmdadd();
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
-const daftar1 = `✿*HOLA* ${pushname} ${ucapanWaktu}\n\n*NUEVO EN EL GRUPO?* *VERIFIQUESE PRIMERO,* *LEE LAS REGLAS* *NO SPAM*`
+const daftar1 = `✿ *HOLA* ${pushname} ${ucapanWaktu}\n\n⚡ *NUEVO EN EL GRUPO?* *VERIFIQUESE PRIMERO,* *LEE LAS REGLAS* *NO SPAM* 👈🏻`
 
        const daftar2 = '```Alv Pamela Omni HERMOSAS XD #LosnuevosPresentarse```'
        const daftar3 = [
@@ -1209,15 +1209,16 @@ const serialUser = createSerial(18)
 	        addRegisteredUser(sender, serialUser)
 	         const anuu = `     *ೋ❀❀ೋ═══ • ═══ೋ❀❀ೋ*
 
+
 *🍁NUEVO ESTA VERIFICADO🍁*
 
-◆ *BIENVENIDO AL GRUPO,*LEE LAS REGLAS*
+❄️ *BIENVENIDO AL GRUPO,* *LEE LAS REGLAS*
 *PARA EVITAR MALOS* 
-*ENTENDIDOS*
-
-◆ *NO SPAM*
+*ENTENDIDOS* 
+❌ *NO SPAM*
 
 *【✪ᗹōτĎ₣ḼǺv✪】*
+
 
      *ೋ❀❀ೋ═══ • ═══ೋ❀❀ೋ*`
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
@@ -1247,13 +1248,13 @@ groups = cnf.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`*ೋ❀❀ೋ═══ • ═══ೋ❀❀ೋ*
+       txtt =`     *◆━━━━━━◆❃◆━━━━━━◆*
 
-*HOLA!* ${pushname} 👋🏻\n\n*❖ RESPETA LAS REGLAS*
-                 *NO DISRESPECT O* 
-*SERA ELIMINADO*
+*HOLA!* ${pushname} 👋🏻\n\🌸*RESPETA LAS REGLAS*
+*NO DISRESPECT O* 
+*SERA ELIMINADO* 🌸🌸
 
-*ೋ❀❀ೋ═══ • ═══ೋ❀❀ೋ*`
+     *◆━━━━━━◆❃◆━━━━━━◆*`
 
                buttons = [{buttonId:`closegc`, 
                buttonText:{displayText: 'MENU🤖'},type:1},
@@ -1486,8 +1487,8 @@ case 'owner':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
                sendKontak(from, `${owner}`, `${fakeyoi}`,'【✪ᗹōτĎ₣ḼǺv✪】')
                await sleep(1000)
-               haibg =`*❖HOLA!* ${pushname}\n*➤ ESE ES MI DUEÑO* *NO PRIVADO*`
-               buttons = [{buttonId: `promote`,buttonText:{displayText: 'QUIERO SER ADMIN 🥺'},type:1},{buttonId:`demote`,buttonText:{displayText:'HENTAI?🙄'},type:1}]
+               haibg =`*HOLA!* ${pushname}\n✧ *ESE ES MI DUEÑO* *NO PRIVADO* ✧`
+               buttons = [{buttonId: `promote`,buttonText:{displayText: 'QUIERO SER ADMIN 🥺'},type:1},{buttonId:`demote`,buttonText:{displayText:'H3NTA1?🙄'},type:1}]
                buttonsMessage = { contentText: `${haibg}`, footerText: `Creado Por ${fakeyoi} `, buttons: buttons, headerType: 1 }
                prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{})
                cnf.relayWAMessage(prep)
@@ -2219,7 +2220,7 @@ break
                    anu = await getBuffer(`${ApiZeks}/api/breakwall?apikey=${zeksApikey}&text=${F}`)
                    cnf.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `Listo`, quoted: mek})
                    break
-      case "kil":
+      case "antilink":
         if (!isGroup) return reply("Solo puede ser utilizado en Grupos");
         if (!isGroupAdmins && !mek.key.fromMe) return reply("Solo puede ser utilizado por un administrador");
         if (args[0] == "on") {
@@ -2468,7 +2469,7 @@ case 'linkwa':
         break;
       
       case "promote":
-        if (!isGroupAdmins) return reply("◆ *QUIERES RETAR AL ADMIN?*");
+        if (!isGroupAdmins) return reply("✧ *QUIERES RETAR AL ADMIN?* ✧");
         if (!isGroup) return;
         if (!isBotGroupAdmins) return reply("No soy administrador");
         if (
@@ -2485,7 +2486,7 @@ case 'linkwa':
         });
         break;
       case "closegc":
-        if (!isGroupAdmins) return reply("❃ *SOLO PUEDE SER UTILIZADO POR LOS ADMIN* ❃");
+        if (!isGroupAdmins) return reply("✧ *SOLO PUEDE SER UTILIZADO POR LOS ADMIN* ✧");
         if (!isBotGroupAdmins) return reply("No soy administrador");
         if (!isGroup) return;
         reply(`❀ *GRUPO CERRADO*`);
@@ -2499,7 +2500,7 @@ case 'linkwa':
         reply("```El link de el grupo ah sido renovado```");
         break;
       case "opengc":
-        if (!isGroupAdmins) return reply("❃ *SOLO PUEDE SER UTILIZADO POR LOS ADMIN* ❃");
+        if (!isGroupAdmins) return reply("✧ *SOLO PUEDE SER UTILIZADO POR LOS ADMIN* ✧");
         if (!isBotGroupAdmins) return reply("Bot no es administrador");
         if (!isGroup) return;
         reply(`❀ *GRUPO ABIERTO*`);
