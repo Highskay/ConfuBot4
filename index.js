@@ -99,22 +99,22 @@ const bgg = fs.readFileSync('./stik/fake.jpeg')
 //// IMAGEN ///
 const time2 = moment().tz("Asia/Jakarta").format("HH:mm:ss");
     if (time2 < "24:59:00") {
-      var ucapanWaktu = "Buenas Dias";
+      var ucapanWaktu = "*BUENOS DIAS*";
     }
     if (time2 < "19:00:00") {
-      var ucapanWaktu = "*Buenas Dias*😼";
+      var ucapanWaktu = "*BUENOS DIAS*😼";
     }
     if (time2 < "18:00:00") {
-      var ucapanWaktu = "*Buenas Dias*😼";
+      var ucapanWaktu = "*BUENOS DIAS*😼";
     }
     if (time2 < "15:00:00") {
-      var ucapanWaktu = "*Buenas Noches*😼";
+      var ucapanWaktu = "*BUENOS DIAS*😼";
     }
     if (time2 < "11:00:00") {
-      var ucapanWaktu = "*Buenas Noches*😼";
+      var ucapanWaktu = "*BUENAS NOCHES*😼";
     }
     if (time2 < "05:00:00") {
-      var ucapanWaktu = "*Buenas Noches*😼";
+      var ucapanWaktu = "*BUENAS NOCHES*😼";
     }
  // BATAS \\
 menusimpel = false
@@ -372,14 +372,14 @@ const checkRegisteredUser = (sender) => {
     if (prefix && command) cmdadd();
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
-const daftar1 = `*HOLA* ${pushname} ${ucapanWaktu}\n\n*Nuevo miembro del grupo,* *Verifiquese primero,* *Lee las reglas no spam*`
+const daftar1 = `✿*HOLA* ${pushname} ${ucapanWaktu}\n\n*Nuevo en el grupo?,* *Verifiquese primero,* *Lee las reglas No Spam*`
 
        const daftar2 = '```Alv Pamela Omni HERMOSAS XD #LosnuevosPresentarse```'
        const daftar3 = [
           {
             buttonId: `verify`,
             buttonText: {
-              displayText: `HOLASOYNUEVO😄`,
+              displayText: `HOLASOYNUEVO☺️`,
             },
             type: 1,
           },]
@@ -416,7 +416,7 @@ cmhit.push(command)
     //MESS
     mess = {
       wait: "𝗣𝗼𝗿 𝗳𝗮𝘃𝗼𝗿 𝗲𝘀𝗽𝗲𝗿𝗲 ± 𝘂𝗻 𝗺𝗶𝗻𝘂𝘁𝗼︎",
-      success: "*ELIMINADO, QUIEN SIGUE?*",
+      success: "❖*ELIMINADO, QUIEN SIGUE?*❖",
       wrongFormat: "Formato incorrecto, inténtalo de nuevo en el menú",
       error: {
         stick: "no es un sticker :v",
@@ -1207,15 +1207,18 @@ const serialUser = createSerial(18)
 	        _registered.push(sender)
 	        fs.writeFileSync('./database/user/registered.json', JSON.stringify(_registered))
 	        addRegisteredUser(sender, serialUser)
-	         const anuu = `「 *🍁NUEVO MIEMBRO VERIFICADO🍁* 」
-*BIENVENIDO AL GRUPO,*LEE LAS REGLAS*
-*PARA EVITAR MALOS* 
-*ENTENTENDIDOS*
-*NO SPAM❗*
+	         const anuu = `ೋ❀❀ೋ═══ • ═══ೋ❀❀ೋ
+*🍁NUEVO ESTA VERIFICADO🍁*
 
-*「 【✪ᗹōτĎ₣ḼǺv✪】 」*`
+❖*BIENVENIDO AL GRUPO,*LEE LAS REGLAS*
+*PARA EVITAR MALOS* 
+*ENTENDIDOS*
+❖*NO SPAM❗*
+
+ೋ❀❀ೋ═══ • ═══ೋ❀❀ೋ
+* 【✪ᗹōτĎ₣ḼǺv✪】 *`
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
-             buttons = [{buttonId: `menu`,buttonText:{displayText: `MENU`},type:1}]
+             buttons = [{buttonId: `menu`,buttonText:{displayText: `MENU BOT🤖`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
               buttonsMessage = {footerText:'【✪ᗹōτĎ₣ḼǺv✪】', imageMessage: imageMsg,
               contentText:`${anuu}`,buttons,headerType:4}
@@ -1225,7 +1228,7 @@ const serialUser = createSerial(18)
 	    // console.log(e)
             setTimeout( () => {
 			cnf.updatePresence(from, Presence.composing)
-			reply(`*Aporta o será eliminado, Ban Activado*`)
+			reply(`*✿APORTA O SERÁ ELIMINADO, BAN ACTIVADO✿*`)
 		}, 2000)
         break
       
@@ -1241,8 +1244,11 @@ groups = cnf.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`*HOLA!* ${pushname} 👋🏻\n\n*RESPETA LAS REGLAS*
-               *MENU👇🏻* *NO DISRESPECT O SERA ELIMINADO*`
+       txtt =`*ೋ❀❀ೋ═══ • ═══ೋ❀❀ೋ*
+*HOLA!* ${pushname} 👋🏻\n\n*❖RESPETA LAS REGLAS*
+                 *NO DISRESPECT O 
+SERA ELIMINADO*
+*ೋ❀❀ೋ═══ • ═══ೋ❀❀ೋ*`
 
                buttons = [{buttonId:`closegc`, 
                buttonText:{displayText: 'MENU🤖'},type:1},
@@ -1475,9 +1481,9 @@ case 'owner':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
                sendKontak(from, `${owner}`, `${fakeyoi}`,'【✪ᗹōτĎ₣ḼǺv✪】')
                await sleep(1000)
-               haibg =`*HOLA* ${pushname}\n*ESE ES MI DUEÑO,* *¡NO PRIVADO!*`
-               buttons = [{buttonId: `promote`,buttonText:{displayText: 'QUIERO SER ADMIN🥺'},type:1},{buttonId:`demote`,buttonText:{displayText:'HENTAI?🙄'},type:1}]
-               buttonsMessage = { contentText: `${haibg}`, footerText: `CREADO POR ${fakeyoi} `, buttons: buttons, headerType: 1 }
+               haibg =`*❖HOLA!* ${pushname}\n*➤ ESE ES MI DUEÑO* *NO PRIVADO*`
+               buttons = [{buttonId: `promote`,buttonText:{displayText: 'QUIERO SER ADMIN 🥺'},type:1},{buttonId:`demote`,buttonText:{displayText:'HENTAI?🙄'},type:1}]
+               buttonsMessage = { contentText: `${haibg}`, footerText: `Creado Por ${fakeyoi} `, buttons: buttons, headerType: 1 }
                prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{})
                cnf.relayWAMessage(prep)
                break     
@@ -2439,7 +2445,7 @@ case 'linkwa':
         break;
       // Demote Admins
       case "demote":
-        if (!mek.key.fromMe && !isGroupAdmins) return reply("*A LAS 12AM SE PUEDE ENVIAR XD*");
+        if (!mek.key.fromMe && !isGroupAdmins) return reply("✿*A LAS 12AM SE PUEDE ACTIVAR*✿");
         if (!isGroup) return;
         if (!isBotGroupAdmins) return reply("No soy administrador");
         if (
@@ -2457,7 +2463,7 @@ case 'linkwa':
         break;
       
       case "promote":
-        if (!isGroupAdmins) return reply("*QUIERES RETAR AL ADMIN?*");
+        if (!isGroupAdmins) return reply("❖*QUIERES RETAR AL ADMIN?❖*");
         if (!isGroup) return;
         if (!isBotGroupAdmins) return reply("No soy administrador");
         if (
@@ -2474,10 +2480,10 @@ case 'linkwa':
         });
         break;
       case "closegc":
-        if (!isGroupAdmins) return reply("*SOLO PUEDE SER UTILIZADO POR LOS ADMIN*");
+        if (!isGroupAdmins) return reply("✿*SOLO PUEDE SER UTILIZADO POR LOS ADMIN*✿");
         if (!isBotGroupAdmins) return reply("No soy administrador");
         if (!isGroup) return;
-        reply(`*GRUPO CERRADO*`);
+        reply(`➤ *GRUPO CERRADO*`);
         cnf.groupSettingChange(from, GroupSettingChange.messageSend, true);
         break;
       case "enlace":
@@ -2488,10 +2494,10 @@ case 'linkwa':
         reply("```El link de el grupo ah sido renovado```");
         break;
       case "opengc":
-        if (!isGroupAdmins) return reply("*SOLO PUEDE SEE UTILIZADO POR LOS ADMIN*");
+        if (!isGroupAdmins) return reply("*✿SOLO PUEDE SER UTILIZADO POR LOS ADMIN✿*");
         if (!isBotGroupAdmins) return reply("Bot no es administrador");
         if (!isGroup) return;
-        reply(`*GRUPO ABIERTO*`);
+        reply(`➤ *GRUPO ABIERTO*`);
         cnf.groupSettingChange(from, GroupSettingChange.messageSend, false);
         break;
       case "alarma":
