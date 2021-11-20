@@ -190,35 +190,38 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
 ➣ @⁨+1 (930) 200-1417 
 
 
-➣ *B I E N V E N I D O ＡＬ ＧＲＵＰＯ*
+➣ *B I E N V E N I D O  A L G R U P O*
 
 
-➣ 『 *B O T D F L A V* 』
+➣ 『 *✪ᗹōτĎ₣ḼǺv✪* 』
 
 
 ╰══•ೋ•✧♡๑✧•ೋc•══╯
 
-_H O L A_ @${num.split('@')[0]}\n 
-👋🏻 _E S P E R O  Q U E  S E  S I E N T A_
-_C O M O  E N  C A S A_ 🥳
+*_H O L A_* @${num.split('@')[0]}\n 
+👋🏻 *_E S P E R O  Q U E  S E  S I E N T A_*
+*_C O M O  E N  C A S A_* 🥳
 
-_D I S F R U T E   E L  G R U P O  P A S A LA_
-_B I E N_  🤗 _S E  R E S P E T U O S O  S O C I A B L E_ 
-_Q U I Z A S   E N C U E N T R E S   E L  A M O R_  💞♥️💞
+*_D I S F R U T E  E L  G R U P O  P A S A L A_*
+*_B I E N_*  🤗 *_S E  R E S P E T U O S O _*
+*_S O C I A B L E_*
+*_Q U I Z A S  E N C U E N T R E S  E L  A M O R_*
+💞♥️💞
 
-_A P O R T A  L E E  L A S  R E G L A S  P O R_
-_F A V O R  P A R A  E V I T A R  M A L O S_
-_E N T E N D I D O S_ ⚔️
+*_A P O R T A  L E E  L A S  R E G L A S  P O R_*
+*_F A V O R  P A R A  E V I T A R_*
+*_M A L O S  E N T E N D I D O S_* 😇
 
-_N O  Q U E R E M O S   M I R O N E S_ 😠
+*_N O  Q U E R E M O S   M I R O N E S_* 👀
+*_O  F A N T A S M A S_* 👻
 
-_A H O R A  P R E S E N T A R S E  O  S E R A_
-_E L I M I N A D O_ 🥺
+*_A H O R A  P R E S E N T A R S E  O  S E R A_*
+*_E L I M I N A D O_* 🥺
 
-_P A M E L A  I N V I T A  H I E R B A_ ? 😳
+*_P A M E L A  I N V T A S?_* 😳
 
-_L E E  L A S  R E G L A S  A Q U I  N O O B_👇🏻`
-                welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'👉🏻 RESPETA LAS REGLAS 👈🏻'},type:1}]
+*_L E E  L A S  R E G L A S  A Q U I_*👇🏻`
+                welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'*REGLASDELGRUPO*😜'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 client.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
                  }      
