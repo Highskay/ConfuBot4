@@ -187,13 +187,13 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 teks = `*╭══ೋ❀❀ೋ══════ೋ❀❀ೋ══╮*
 
 
-   ➣ @⁨+1 (930) 200-1417 
+     🌸➣ @⁨+1 (930) 200-1417 
 
 
-   ➣ *B I E N V E N I D O A L G R U P O*
+     🌸➣ *B I E N V E N I D O A L G R U P O*
 
 
-   ➣ 『 ✪ᗹōτĎ₣ḼǺv✪ 』
+     🌸➣ 【✪ᗹōτ₣ḼǺvßØ†✪】
 
 
 
@@ -204,7 +204,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
 *_C O M O  E N  C A S A_* 🥳
 
 ❃ *_D I S F R U T E  E L  G R U P O  P A S A L A_*
-*_B I E N_*  🤗  *_S E  R E S P E T U O S O _*
+*_B I E N_*  🤗  *_S E  R E S P E T U O S O_*
 *_S O C I A B L E_*
 *_Q U I Z A S  E N C U E N T R E S  E L  A M O R_*
 💞♥️💞
@@ -222,7 +222,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
 ❃ *_P A M E L A  I N V T A S?_* 😳
 
 *_L E E  L A S  R E G L A S  A Q U I_*👇🏻`
-                welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'*REGLASDELGRUPO*😜'},type:1}]
+                welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'REGLASDELGRUPO😜'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 client.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
                  }      
