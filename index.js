@@ -1207,20 +1207,25 @@ const serialUser = createSerial(18)
 	        _registered.push(sender)
 	        fs.writeFileSync('./database/user/registered.json', JSON.stringify(_registered))
 	        addRegisteredUser(sender, serialUser)
-	         const anuu = `     *ೋ❀❀ೋ═══ • ═══ೋ❀❀ೋ*
+	         const anuu = `     🌸 *ೋ❀❀ೋ════════ • ═══════ೋ❀❀ೋ* 🌸
 
 
-*🍁NUEVO ESTA VERIFICADO🍁*
+⚡ *NUEVO ESTA VERIFICADO*
 
-❄️ *BIENVENIDO AL GRUPO,* *LEE LAS REGLAS*
-*PARA EVITAR MALOS* 
-*ENTENDIDOS* 
-❌ *NO SPAM*
+🌸 *BIENVENIDO AL GRUPO,* *LEE LAS REGLAS*
+
+   *PARA EVITAR MALOS ENTENDIDOS* ❄️ 💨
+
+🌀 *SE RESPETUOSO Y SOCIABLE* 🍡
+
+   *NO SPAM* 📛
+
+
 
 *【✪ᗹōτĎ₣ḼǺv✪】*
 
 
-     *ೋ❀❀ೋ═══ • ═══ೋ❀❀ೋ*`
+     🌸 *ೋ❀❀ೋ════════ • ═══════ೋ❀❀ೋ* 🌸`
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
              buttons = [{buttonId: `menu`,buttonText:{displayText: `MENU BOT🤖`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
@@ -1248,18 +1253,20 @@ groups = cnf.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`     *◆━━━━━━◆❃◆━━━━━━◆*
+       txtt =`     *◆━━━━━━━━━━━━━◆❃◆━━━━━━━━━━━━━◆*
 
-*HOLA!* ${pushname} 👋🏻\n\🌸*RESPETA LAS REGLAS*
-*NO DISRESPECT O* 
-*SERA ELIMINADO* 🌸🌸
+*HOLA!* ${pushname} 👋🏻\n\🌸 *RESPETA LAS REGLAS*
+               *NO DISRESPECT*
+          *MIRONES O FANTASMAS BAN* 👈🏻
+              *SERA ELIMINADO* 🌸 🌸
+                 *BOT MENU* 🚫
 
-     *◆━━━━━━◆❃◆━━━━━━◆*`
+     *◆━━━━━━━━━━━━━◆❃◆━━━━━━━━━━━━━◆*`
 
                buttons = [{buttonId:`closegc`, 
                buttonText:{displayText: 'MENU🤖'},type:1},
                {buttonId:`owner`,buttonText:{displayText:'CREADOR😻'},type:1},
-               {buttonId:`opengc`,buttonText:{displayText:'LIST MENU🍁'},type:1}]
+               {buttonId:`opengc`,buttonText:{displayText:'LIST MENU⚡'},type:1}]
 
 
                imageMsg = (await cnf.prepareMessageMedia(fs.readFileSync(`./stik/oksip.jpeg`), 'imageMessage', {thumbnail: fs.readFileSync(`./stik/oksip.jpeg`)})).imageMessage
@@ -1487,8 +1494,8 @@ case 'owner':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
                sendKontak(from, `${owner}`, `${fakeyoi}`,'【✪ᗹōτĎ₣ḼǺv✪】')
                await sleep(1000)
-               haibg =`*HOLA!* ${pushname}\n✧ *ESE ES MI DUEÑO* *NO PRIVADO* ✧`
-               buttons = [{buttonId: `promote`,buttonText:{displayText: 'QUIERO SER ADMIN 🥺'},type:1},{buttonId:`demote`,buttonText:{displayText:'H3NTA1?🙄'},type:1}]
+               haibg =`🌸 *HOLA!* ${pushname}\n✧ *ESE ES MI DUEÑO NO PRIVADO* 😻✧`
+               buttons = [{buttonId: `promote`,buttonText:{displayText: 'QUIERO SER ADMIN 🥺'},type:1},{buttonId:`demote`,buttonText:{displayText:'H3NTAI?🙄'},type:1}]
                buttonsMessage = { contentText: `${haibg}`, footerText: `Creado Por ${fakeyoi} `, buttons: buttons, headerType: 1 }
                prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{})
                cnf.relayWAMessage(prep)
