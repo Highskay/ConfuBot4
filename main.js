@@ -184,7 +184,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 anu_user = v.vname || v.notify || num.split('@')[0]
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
-                teks = `*╭══ೋ❀❀ೋ══════ೋ❀❀ೋ══╮*
+                teks = `*╭══ೋ❀❀ೋ═══❀═══ೋ❀❀ೋ══╮*
 
 
      🌸➣ @⁨+1 (930) 200-1417 
@@ -197,7 +197,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
 
 
 
-*╰══ೋ❀❀ೋ══════ೋ❀❀ೋ══╯*
+*╰══ೋ❀❀ೋ═══❀═══ೋ❀❀ೋ══╯*
 
 ❃ *_H O L A_* @${num.split('@')[0]}\n 
 👋🏻 *_E S P E R O  Q U E  S E  S I E N T A_*
