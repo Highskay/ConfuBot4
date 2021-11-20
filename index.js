@@ -372,10 +372,9 @@ const checkRegisteredUser = (sender) => {
     if (prefix && command) cmdadd();
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
-const daftar1 = `*HOLA* ${pushname} ${ucapanWaktu}\n\n*Nuevo miembro del grupo,* *verifiquese primero, lee las reglas no spam*`
+const daftar1 = `*HOLA* ${pushname} ${ucapanWaktu}\n\n*Nuevo miembro del grupo,* *Verifiquese primero,* *Lee las reglas no spam*`
 
-       const daftar2 = '```Alv Pamela Omni HERMOSAS XD 
-                           #Losnuevospresentarse```'
+       const daftar2 = '```Alv Pamela Omni HERMOSAS XD #LosnuevosPresentarse```'
        const daftar3 = [
           {
             buttonId: `verify`,
@@ -1196,7 +1195,7 @@ await cnf.setStatus(`Bot activado desde ${uptime}`).catch((_) => _);
     }
     if (!mek.key.fromMe && banChats === true) return;
 switch (command) {
-case 'verify':              
+case 'HOLASOYNUEVO':              
 if (isRegistered) return reply('Tu cuenta está verificada')
 const serialUser = createSerial(18)
 	         try {
@@ -1208,12 +1207,11 @@ const serialUser = createSerial(18)
 	        _registered.push(sender)
 	        fs.writeFileSync('./database/user/registered.json', JSON.stringify(_registered))
 	        addRegisteredUser(sender, serialUser)
-	         const anuu = `「 *NUEVO MIEMBRO* 」
-*BIENVENIDO AL GRUPO, LEE LAS REGLAS*
-*☂︎ Nombre :* ${pushname}
-*☂︎ API :* +${sender.split('@')[0]}
-*☂︎ Serial:* ${serialUser}
-*☂ ︎Total:* ${_registered.length} User
+	         const anuu = `「 *NUEVO MIEMBRO VERIFICADO* 」
+*BIENVENIDO AL GRUPO,*LEE LAS REGLAS*
+*PARA EVITAR MALOS* 
+*ENTENTENDIDOS*
+*NO SPAM*
 
 *「 【✪ᗹōτĎ₣ḼǺv✪】 」*`
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
@@ -1244,7 +1242,7 @@ groups = cnf.chats.array.filter(v => v.jid.endsWith('g.us'))
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
        txtt =`*HOLA!* ${pushname} 👋🏻\n\n*RESPETA LAS REGLAS*
-               *USE EL MENU👇🏻* *NO DISRESPECT O SERA ELIMINADO*`
+               *EL MENU👇🏻* *NO DISRESPECT O SERA ELIMINADO*`
 
                buttons = [{buttonId:`closegc`, 
                buttonText:{displayText: 'MENU'},type:1},
@@ -1478,7 +1476,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                sendKontak(from, `${owner}`, `${fakeyoi}`,'【✪ᗹōτĎ₣ḼǺv✪】')
                await sleep(1000)
                haibg =`*HOLA* ${pushname}\n*ESE ES MI DUEÑO,* *¡NO PRIVADO!*`
-               buttons = [{buttonId: `enlace`,buttonText:{displayText: 'QUIERO SER ADMIN!'},type:1},{buttonId:`iggw`,buttonText:{displayText:'INSTAGRAM'},type:1}]
+               buttons = [{buttonId: `enlace`,buttonText:{displayText: 'QUIERO SER ADMIN!'},type:1},{buttonId:`demote`,buttonText:{displayText:'INSTAGRAM ADMIN KULONA'},type:1}]
                buttonsMessage = { contentText: `${haibg}`, footerText: `Creado por ${fakeyoi} `, buttons: buttons, headerType: 1 }
                prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{})
                cnf.relayWAMessage(prep)
@@ -2441,14 +2439,14 @@ case 'linkwa':
         break;
       // Demote Admins
       case "demote":
-        if (!mek.key.fromMe && !isGroupAdmins) return reply("Solo administrador de el grupo puede usarlo");
+        if (!mek.key.fromMe && !isGroupAdmins) return reply("*No eres admin, Solo los Admin pueden usarlo XD");
         if (!isGroup) return;
         if (!isBotGroupAdmins) return reply("No soy administrador");
         if (
           mek.message.extendedTextMessage === undefined ||
           mek.message.extendedTextMessage === null
         )
-          return reply("Etiqueta a un admin");
+          return reply("*Admin ya lo sabe XD*");
         mentionede = mek.message.extendedTextMessage.contextInfo.participant;
         cnf.groupDemoteAdmin(from, [mentionede]);
         teks = `@${mentionede.split("@")[0]} ya no es administrador`;
