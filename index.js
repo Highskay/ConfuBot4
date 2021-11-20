@@ -1264,9 +1264,9 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
  𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦𝐚 : ${os.platform()}`, imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
-}
 
-           *USE EL BOT 111119999 COMANDOS👇🏻*
+         *USE EL BOT 111119999 COMANDOS👇🏻*
+}
 
 prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: fkontak})
                cnf.relayWAMessage(prep)
