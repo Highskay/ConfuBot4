@@ -379,7 +379,7 @@ const daftar1 = `*HOLA* ${pushname} ${ucapanWaktu}\n\n*Nuevo miembro del grupo,*
           {
             buttonId: `verify`,
             buttonText: {
-              displayText: `Holasoynuevo`,
+              displayText: `HOLASOYNUEVO😄`,
             },
             type: 1,
           },]
@@ -1157,7 +1157,7 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
     if (isGroup && isAntilink && !mek.key.fromMe) {
       if (budy.includes("://chat.whatsapp.com/")) {
         if (isGroupAdmins) return
-        reply("ANTILINK!! AHORA TE VIOLO NO SE PERMITEN ENLACES TE MATO PERRA HDP");
+        reply("*ENLACE DETECTADO!!* *NO SE PERMITEN ENLACES TE MATO PERRA HDP*");
         cnf.groupRemove(from, [sender]); 
       }
     }
@@ -1207,11 +1207,11 @@ const serialUser = createSerial(18)
 	        _registered.push(sender)
 	        fs.writeFileSync('./database/user/registered.json', JSON.stringify(_registered))
 	        addRegisteredUser(sender, serialUser)
-	         const anuu = `「 *NUEVO MIEMBRO VERIFICADO* 」
+	         const anuu = `「 *🍁NUEVO MIEMBRO VERIFICADO🍁* 」
 *BIENVENIDO AL GRUPO,*LEE LAS REGLAS*
 *PARA EVITAR MALOS* 
 *ENTENTENDIDOS*
-*NO SPAM*
+*NO SPAM❗*
 
 *「 【✪ᗹōτĎ₣ḼǺv✪】 」*`
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
@@ -1245,9 +1245,9 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                *MENU👇🏻* *NO DISRESPECT O SERA ELIMINADO*`
 
                buttons = [{buttonId:`closegc`, 
-               buttonText:{displayText: 'MENU'},type:1},
-               {buttonId:`owner`,buttonText:{displayText:'CREADOR'},type:1},
-               {buttonId:`opengc`,buttonText:{displayText:'LIST MENU'},type:1}]
+               buttonText:{displayText: 'MENU🤖'},type:1},
+               {buttonId:`owner`,buttonText:{displayText:'CREADOR😻'},type:1},
+               {buttonId:`opengc`,buttonText:{displayText:'LIST MENU🍁'},type:1}]
 
 
                imageMsg = (await cnf.prepareMessageMedia(fs.readFileSync(`./stik/oksip.jpeg`), 'imageMessage', {thumbnail: fs.readFileSync(`./stik/oksip.jpeg`)})).imageMessage
@@ -1476,8 +1476,8 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                sendKontak(from, `${owner}`, `${fakeyoi}`,'【✪ᗹōτĎ₣ḼǺv✪】')
                await sleep(1000)
                haibg =`*HOLA* ${pushname}\n*ESE ES MI DUEÑO,* *¡NO PRIVADO!*`
-               buttons = [{buttonId: `enlace`,buttonText:{displayText: 'QUIERO SER ADMIN!'},type:1},{buttonId:`demote`,buttonText:{displayText:'INSTAGRAM ADMIN KULONA'},type:1}]
-               buttonsMessage = { contentText: `${haibg}`, footerText: `Creado por ${fakeyoi} `, buttons: buttons, headerType: 1 }
+               buttons = [{buttonId: `promote`,buttonText:{displayText: 'QUIERO SER ADMIN🥺'},type:1},{buttonId:`demote`,buttonText:{displayText:'HENTAI?🙄'},type:1}]
+               buttonsMessage = { contentText: `${haibg}`, footerText: `CREADO POR ${fakeyoi} `, buttons: buttons, headerType: 1 }
                prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{})
                cnf.relayWAMessage(prep)
                break     
@@ -2208,7 +2208,7 @@ break
                    anu = await getBuffer(`${ApiZeks}/api/breakwall?apikey=${zeksApikey}&text=${F}`)
                    cnf.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `Listo`, quoted: mek})
                    break
-      case "Cn":
+      case "kil":
         if (!isGroup) return reply("Solo puede ser utilizado en Grupos");
         if (!isGroupAdmins && !mek.key.fromMe) return reply("Solo puede ser utilizado por un administrador");
         if (args[0] == "on") {
@@ -2218,7 +2218,7 @@ break
             "./database/antilink.json",
             JSON.stringify(antilink)
           );
-          reply("¡Activado, ahora seran eliminados !");
+          reply("*¡Activado,ahora seran eliminados!*");
         } else if (args[0] == "off") {
           antilink.splice(from, 1);
           fs.writeFileSync(
@@ -2439,14 +2439,14 @@ case 'linkwa':
         break;
       // Demote Admins
       case "demote":
-        if (!mek.key.fromMe && !isGroupAdmins) return reply("*No eres admin, Solo los Admin pueden usarlo XD");
+        if (!mek.key.fromMe && !isGroupAdmins) return reply("*A LAS 12AM SE PUEDE ENVIAR XD*");
         if (!isGroup) return;
         if (!isBotGroupAdmins) return reply("No soy administrador");
         if (
           mek.message.extendedTextMessage === undefined ||
           mek.message.extendedTextMessage === null
         )
-          return reply("*Admin ya lo sabe XD*");
+          return reply("*ADMIN QUIERE HENTAI XD*");
         mentionede = mek.message.extendedTextMessage.contextInfo.participant;
         cnf.groupDemoteAdmin(from, [mentionede]);
         teks = `@${mentionede.split("@")[0]} ya no es administrador`;
@@ -2457,14 +2457,14 @@ case 'linkwa':
         break;
       
       case "promote":
-        if (!isGroupAdmins) return reply("Solo administrador de el grupo puede usarlo");
+        if (!isGroupAdmins) return reply("*QUIERES RETAR AL ADMIN?*");
         if (!isGroup) return;
         if (!isBotGroupAdmins) return reply("No soy administrador");
         if (
           mek.message.extendedTextMessage === undefined ||
           mek.message.extendedTextMessage === null
         )
-          return reply("Etiqueta");
+          return reply("*YA ESTAS DE ADMIN XD*");
         mentionede = mek.message.extendedTextMessage.contextInfo.participant;
         cnf.groupMakeAdmin(from, [mentionede]);
         teks = `@${mentionede.split("@")[0]} Ahora es administrador `;
@@ -2474,21 +2474,21 @@ case 'linkwa':
         });
         break;
       case "closegc":
-        if (!isGroupAdmins) return reply("*Solo puede ser utilizado por los admin*");
+        if (!isGroupAdmins) return reply("*SOLO PUEDE SER UTILIZADO POR LOS ADMIN*");
         if (!isBotGroupAdmins) return reply("No soy administrador");
         if (!isGroup) return;
         reply(`*GRUPO CERRADO*`);
         cnf.groupSettingChange(from, GroupSettingChange.messageSend, true);
         break;
       case "enlace":
-        if (!isGroupAdmins) return reply("QUIERES RETAR AL ADMIN?");
+        if (!isGroupAdmins) return reply("*Solo Admin*");
         if (!isBotGroupAdmins) return reply("No soy admin");
         if (!isGroup) return;
         cnf.revokeInvite(from);
         reply("```El link de el grupo ah sido renovado```");
         break;
       case "opengc":
-        if (!isGroupAdmins) return reply("*Solo puede ser utilizado por los Admin*");
+        if (!isGroupAdmins) return reply("*SOLO PUEDE SEE UTILIZADO POR LOS ADMIN*");
         if (!isBotGroupAdmins) return reply("Bot no es administrador");
         if (!isGroup) return;
         reply(`*GRUPO ABIERTO*`);
