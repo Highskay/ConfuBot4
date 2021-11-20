@@ -184,29 +184,29 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 anu_user = v.vname || v.notify || num.split('@')[0]
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
-                teks = `*╭══ೋ❀❀ೋ═══ • ═══ೋ❀❀ೋ══╮*
+                teks = `*╭══ೋ❀❀ೋ══════ೋ❀❀ೋ══╮*
 
 
-➣ @⁨+1 (930) 200-1417 
+   ➣ @⁨+1 (930) 200-1417 
 
 
-➣ *B I E N V E N I D O A L G R U P O*
+   ➣ *B I E N V E N I D O A L G R U P O*
 
 
-➣ 『*✪ᗹōτĎ₣ḼǺv✪*』
+   ➣ 『 ✪ᗹōτĎ₣ḼǺv✪ 』
 
 
 
-*╰══ೋ❀❀ೋ═══ • ═══ೋ❀❀ೋ══╯*
+*╰══ೋ❀❀ೋ══════ೋ❀❀ೋ══╯*
 
 ❃ *_H O L A_* @${num.split('@')[0]}\n 
 👋🏻 *_E S P E R O  Q U E  S E  S I E N T A_*
 *_C O M O  E N  C A S A_* 🥳
 
 ❃ *_D I S F R U T E  E L  G R U P O  P A S A L A_*
-*_B I E N_*  🤗 *_S E  R E S P E T U O S O _*
+*_B I E N_*  🤗  *_S E  R E S P E T U O S O _*
 *_S O C I A B L E_*
-▸*_Q U I Z A S  E N C U E N T R E S  E L  A M O R_*
+*_Q U I Z A S  E N C U E N T R E S  E L  A M O R_*
 💞♥️💞
 
 ❃ *_A P O R T A  L E E  L A S  R E G L A S  P O R_*
