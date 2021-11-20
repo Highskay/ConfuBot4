@@ -1195,7 +1195,7 @@ await cnf.setStatus(`Bot activado desde ${uptime}`).catch((_) => _);
     }
     if (!mek.key.fromMe && banChats === true) return;
 switch (command) {
-case 'Holasoynuevo':              
+case 'verify':              
 if (isRegistered) return reply('Tu cuenta está verificada')
 const serialUser = createSerial(18)
 	         try {
