@@ -372,14 +372,15 @@ const checkRegisteredUser = (sender) => {
     if (prefix && command) cmdadd();
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
-const daftar1 = `*HOLA* ${pushname} ${ucapanWaktu}\n\n*Nuevo miembro del grupo* , *verifiquese primero, lee las reglas no spam*`
+const daftar1 = `*HOLA* ${pushname} ${ucapanWaktu}\n\n*Nuevo miembro del grupo,* *verifiquese primero, lee las reglas no spam*`
 
-       const daftar2 = '```Alv Pamela Omni HERMOSAS XD #losnuevospresentarse```'
+       const daftar2 = '```Alv Pamela Omni HERMOSAS XD 
+                           #Losnuevospresentarse```'
        const daftar3 = [
           {
             buttonId: `verify`,
             buttonText: {
-              displayText: `Verify`,
+              displayText: `HOLASOYNUEVO`,
             },
             type: 1,
           },]
@@ -1245,7 +1246,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
        txtt =`*HOLA!* ${pushname} 👋🏻\n\n*RESPETA LAS REGLAS*
                *USE EL MENU👇🏻* *NO DISRESPECT O SERA ELIMINADO*`
 
-               buttons = [{buttonId:`opengc`, 
+               buttons = [{buttonId:`closegc`, 
                buttonText:{displayText: 'MENU'},type:1},
                {buttonId:`owner`,buttonText:{displayText:'CREADOR'},type:1},
                {buttonId:`opengc`,buttonText:{displayText:'LIST MENU'},type:1}]
@@ -1466,7 +1467,7 @@ reply(`${mek.quoted.caption}`)
 break
 case 'iggw':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-  reply('https://www.instagram/Quemdahaces56nojuegesconelbotcarajo.com')
+  reply('https://www.instagram/Quemdahaces56nojuegesconcom')
 break
    
 case 'owner':
@@ -1476,8 +1477,8 @@ case 'owner':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
                sendKontak(from, `${owner}`, `${fakeyoi}`,'【✪ᗹōτĎ₣ḼǺv✪】')
                await sleep(1000)
-               haibg =`*HOLA* ${pushname}\n*ESE ES MI DUEÑO,* ¡*NO PRIVADO*!`
-               buttons = [{buttonId: `script`,buttonText:{displayText: 'QUIERO SER ADMIN!'},type:1},{buttonId:`iggw`,buttonText:{displayText:'INSTAGRAM'},type:1}]
+               haibg =`*HOLA* ${pushname}\n*ESE ES MI DUEÑO,* *¡NO PRIVADO!*`
+               buttons = [{buttonId: `enlace`,buttonText:{displayText: 'QUIERO SER ADMIN!'},type:1},{buttonId:`iggw`,buttonText:{displayText:'INSTAGRAM'},type:1}]
                buttonsMessage = { contentText: `${haibg}`, footerText: `Creado por ${fakeyoi} `, buttons: buttons, headerType: 1 }
                prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{})
                cnf.relayWAMessage(prep)
@@ -2475,14 +2476,14 @@ case 'linkwa':
         });
         break;
       case "closegc":
-        if (!isGroupAdmins) return reply("Solo puede ser utilizado por un administrador");
+        if (!isGroupAdmins) return reply("*Solo puede ser utilizado por los admin*");
         if (!isBotGroupAdmins) return reply("No soy administrador");
         if (!isGroup) return;
         reply(`*GRUPO CERRADO*`);
         cnf.groupSettingChange(from, GroupSettingChange.messageSend, true);
         break;
-      case "anular":
-        if (!isGroupAdmins) return reply("Solo puede ser utilizado por un administrador");
+      case "enlace":
+        if (!isGroupAdmins) return reply("QUIERES RETAR AL ADMIN?");
         if (!isBotGroupAdmins) return reply("No soy admin");
         if (!isGroup) return;
         cnf.revokeInvite(from);
