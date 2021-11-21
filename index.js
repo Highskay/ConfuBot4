@@ -1210,23 +1210,20 @@ const serialUser = createSerial(18)
 	        fs.writeFileSync('./database/user/registered.json', JSON.stringify(_registered))
 	        addRegisteredUser(sender, serialUser)
 	         const anuu = `*✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦*
-     🌸 *ೋ❀❀ೋ═══•══ೋ❀❀ೋ* 🌸
-
+     🌸 *ೋ❀❀ೋ═══•═ೋ❀❀ೋ* 🌸
 
 ⚡ *【NUEVO ESTA VERIFICADO!】* ⚡
+
 
 🌸 *BIENVENIDO AL GRUPO LEE LAS REGLAS*
    *PARA EVITAR MALOS ENTENDIDOS* ❄️ 💨
 🌀 *SE RESPETUOSO Y SOCIABLE* 🍧
            
-         *NO SPAM* 🚫
+           *NO SPAM* 🚫
 
 
 
-*【✪ᗹōτĎ₣ḼǺvᗹōτ✪】*
-
-
-     🌸 *ೋ❀❀ೋ═══•══ೋ❀❀ೋ* 🌸
+     🌸 *ೋ❀❀ೋ═══•═ೋ❀❀ೋ* 🌸
 
  *✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦* `
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
