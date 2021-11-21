@@ -375,7 +375,8 @@ const checkRegisteredUser = (sender) => {
 const daftar1 = `✿ *HOLA* ${pushname} ${ucapanWaktu}\n\n⚡ *NUEVO EN EL GRUPO ?* *VERIFIQUESE PRIMERO* *LEE LAS REGLAS* *NO SPAM* 👈🏻`
 
 
-       const daftar2 = '```Alv Pamela Omni XD #NUEVOS PRESENTARSE``'
+
+       const daftar2 = '*_Alv Pamela Omni XD_* *_#NUEVOS PRESENTARSE_* '
        const daftar3 = [
           {
             buttonId: `verify`,
@@ -1208,7 +1209,7 @@ const serialUser = createSerial(18)
 	        _registered.push(sender)
 	        fs.writeFileSync('./database/user/registered.json', JSON.stringify(_registered))
 	        addRegisteredUser(sender, serialUser)
-	         const anuu = `     🌸 *ೋ❀❀ೋ════ • ═══ೋ❀❀ೋ* 🌸
+	         const anuu = `     🌸 *ೋ❀❀ೋ══ • ═ೋ❀❀ೋ* 🌸
 
 
 ⚡ *NUEVO ESTA VERIFICADO* ⚡
@@ -1227,7 +1228,7 @@ const serialUser = createSerial(18)
 *【✪ᗹōτĎ₣ḼǺv✪】*
 
 
-     🌸 *ೋ❀❀ೋ════ • ═══ೋ❀❀ೋ* 🌸`
+     🌸 *ೋ❀❀ೋ══ • ═ೋ❀❀ೋ* 🌸`
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
              buttons = [{buttonId: `menu`,buttonText:{displayText: `MENU BOT🤖`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
@@ -1255,16 +1256,18 @@ groups = cnf.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`     *◆━━━━━━━━◆❃◆━━━━━━━━◆*
+       txtt =` *✧ » ◇ « ✧ » ✦ « ✧ » ◇ « ✧ » ◇ « ✧ » ✦ « ✧ » ◇ « ✧ » ◇ « ✧ » ✦ « ✧ » ◇ « ✧*
+     *◆━━━━━━━━━━◆❃◆━━━━━━━━━━◆*
 
 *HOLA!* ${pushname} 👋🏻\n\🌸 *RESPETA LAS REGLAS*
                *NO DISRESPECT*
-         *MIRONES O FANTASMAS BAN* 👈🏻
+        *MIRONES O FANTASMAS BAN* 👈🏻
              *O SERA ELIMINADO* 🌸 🌸
 
                  *BOT MENU* 🚫
 
-     *◆━━━━━━━━◆❃◆━━━━━━━━◆*`
+     *◆━━━━━━━━━━◆❃◆━━━━━━━━━━◆*
+ *✧ » ◇ « ✧ » ✦ « ✧ » ◇ « ✧ » ◇ « ✧ » ✦ « ✧ » ◇ « ✧ » ◇ « ✧ » ✦ « ✧ » ◇ « ✧*`
 
                buttons = [{buttonId:`closegc`, 
                buttonText:{displayText: 'MENU🤖'},type:1},
