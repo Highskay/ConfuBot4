@@ -376,7 +376,7 @@ const daftar1 = `✿ *HOLA* ${pushname} ${ucapanWaktu}\n\n⚡ *NUEVO EN EL GRUPO
 
 
 
-       const daftar2 = '_Alv Pamela Omni XD_* *_#NUEVOS PRESENTARSE_ '
+       const daftar2 = '_Alv Pamela Omni XD_ _#NUEVOS PRESENTARSE_ '
        const daftar3 = [
           {
             buttonId: `verify`,
@@ -1209,26 +1209,26 @@ const serialUser = createSerial(18)
 	        _registered.push(sender)
 	        fs.writeFileSync('./database/user/registered.json', JSON.stringify(_registered))
 	        addRegisteredUser(sender, serialUser)
-	         const anuu = `     🌸 *ೋ❀❀ೋ══ • ═ೋ❀❀ೋ* 🌸
+	         const anuu = `*✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦*
+     🌸 *ೋ❀❀ೋ═══•══ೋ❀❀ೋ* 🌸
 
 
-⚡ *NUEVO ESTA VERIFICADO* ⚡
+⚡ *【NUEVO ESTA VERIFICADO!】* ⚡
 
-🌸 *BIENVENIDO AL GRUPO,* *LEE LAS REGLAS*
-
+🌸 *BIENVENIDO AL GRUPO LEE LAS REGLAS*
    *PARA EVITAR MALOS ENTENDIDOS* ❄️ 💨
-
-🌀 *SE RESPETUOSO Y SOCIABLE* 🍡
-
-
-    *NO SPAM* 📛
+🌀 *SE RESPETUOSO Y SOCIABLE* 🍧
+           
+         *NO SPAM* 🚫
 
 
 
-*【✪ᗹōτĎ₣ḼǺv✪】*
+*【✪ᗹōτĎ₣ḼǺvᗹōτ✪】*
 
 
-     🌸 *ೋ❀❀ೋ══ • ═ೋ❀❀ೋ* 🌸`
+     🌸 *ೋ❀❀ೋ═══•══ೋ❀❀ೋ* 🌸
+
+ *✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦* `
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
              buttons = [{buttonId: `menu`,buttonText:{displayText: `MENU BOT🤖`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
@@ -1260,13 +1260,14 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 
 *HOLA!* ${pushname} 👋🏻\n\🌸 *RESPETA LAS REGLAS* 🌸
 
-               *NO DISRESPECT* 💨
+                *NO DISRESPECT* 💨
       *MIRONES O FANTASMAS BAN* 👈🏻
             ❄️ *O SERA ELIMINADO* 🌸 
 
                   👇🏻 *BOT MENU* 🚫
 
  *✧ » ◇ « ✧ » ✦ « ✧ » ◇ « ✧ » ◇ « ✧ » ✦ « ✧ » ◇ « ✧ » ◇ « ✧ » ✦ « ✧ » ◇ « ✧*`
+
 
                buttons = [{buttonId:`closegc`, 
                buttonText:{displayText: 'MENU🤖'},type:1},
@@ -3996,7 +3997,7 @@ case 'waifu':
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
 		      buttons = [{buttonId: `waifu`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = ( await cnf.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
-              buttonsMessage = {footerText:'QUIERO SER ADMIN', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'ADMIN INACTIVO😜', imageMessage: imageMsg,
               contentText:`Click Next`,buttons,headerType:4}
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               cnf.relayWAMessage(prep)
