@@ -376,7 +376,7 @@ const daftar1 = `✿ *HOLA* ${pushname} ${ucapanWaktu}\n\n⚡ *NUEVO EN EL GRUPO
 
 
 
-       const daftar2 = '*_Alv Pamela Omni XD_* *_#NUEVOS PRESENTARSE_* '
+       const daftar2 = '_Alv Pamela Omni XD_* *_#NUEVOS PRESENTARSE_ '
        const daftar3 = [
           {
             buttonId: `verify`,
@@ -1257,16 +1257,15 @@ groups = cnf.chats.array.filter(v => v.jid.endsWith('g.us'))
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
        txtt =` *✧ » ◇ « ✧ » ✦ « ✧ » ◇ « ✧ » ◇ « ✧ » ✦ « ✧ » ◇ « ✧ » ◇ « ✧ » ✦ « ✧ » ◇ « ✧*
-     *◆━━━━━━━━━━◆❃◆━━━━━━━━━━◆*
 
-*HOLA!* ${pushname} 👋🏻\n\🌸 *RESPETA LAS REGLAS*
-               *NO DISRESPECT*
-        *MIRONES O FANTASMAS BAN* 👈🏻
-             *O SERA ELIMINADO* 🌸 🌸
+*HOLA!* ${pushname} 👋🏻\n\🌸 *RESPETA LAS REGLAS* 🌸
 
-                 *BOT MENU* 🚫
+               *NO DISRESPECT* 💨
+      *MIRONES O FANTASMAS BAN* 👈🏻
+            ❄️ *O SERA ELIMINADO* 🌸 
 
-     *◆━━━━━━━━━━◆❃◆━━━━━━━━━━◆*
+                  👇🏻 *BOT MENU* 🚫
+
  *✧ » ◇ « ✧ » ✦ « ✧ » ◇ « ✧ » ◇ « ✧ » ✦ « ✧ » ◇ « ✧ » ◇ « ✧ » ✦ « ✧ » ◇ « ✧*`
 
                buttons = [{buttonId:`closegc`, 
