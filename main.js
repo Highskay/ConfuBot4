@@ -184,20 +184,20 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 anu_user = v.vname || v.notify || num.split('@')[0]
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
-                teks = `*╭══ೋ❀❀ೋ═══❀═══ೋ❀❀ೋ══╮*
+                teks = `*╭══ೋ❀❀ೋ══❀══ೋ❀❀ೋ══╮*
 
 
      🌸➣ @⁨+1 (930) 200-1417 
 
 
-     🌸➣ *B I E N V E N I D O A L G R U P O*
+     🌸➣ *B I E N V E N I D O (A)*
 
 
      🌸➣ 【✪ᗹōτ₣ḼǺvßØ†✪】
 
 
 
-*╰══ೋ❀❀ೋ═══❀═══ೋ❀❀ೋ══╯*
+*╰══ೋ❀❀ೋ══❀══ೋ❀❀ೋ══╯*
 
 ❃ *_H O L A_* @${num.split('@')[0]}\n 
 👋🏻 *_E S P E R O  Q U E  S E  S I E N T A_*
@@ -220,6 +220,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
 *_E L I M I N A D O_* 🥺
 
 ❃ *_P A M E L A  I N V T A S?_* 😳
+
 
 *_L E E  L A S  R E G L A S  A Q U I_*👇🏻`
                 welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'REGLASDELGRUPO😜'},type:1}]
