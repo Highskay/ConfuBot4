@@ -376,7 +376,7 @@ const daftar1 = `✿ *HOLA* ${pushname} ${ucapanWaktu}\n\n⚡ *NUEVO EN EL GRUPO
 
 
 
-       const daftar2 = '_Alv Pamela Omni XD_ _#NUEVOS PRESENTARSE_ '
+       const daftar2 = 'ALV HOLY SHIT EAGLE EYE OWNS GOD LIKE XD_ _#NUEVOS PRESENTARSE_ '
        const daftar3 = [
           {
             buttonId: `verify`,
