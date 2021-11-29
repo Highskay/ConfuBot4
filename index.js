@@ -1157,7 +1157,7 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
     };
     
     if (isGroup && isAntilink && !mek.key.fromMe) {
-      if (budy.includes("://chat.whatsapp.com/")) {
+      if (budy.includes("://https.chat.whatsapp.com/")) {
         if (isGroupAdmins) return
         reply("*ENLACE DETECTADO!!* *NO SE PERMITEN ENLACES TE MATO PERRA HDP*");
         cnf.groupRemove(from, [sender]); 
@@ -1237,7 +1237,7 @@ const serialUser = createSerial(18)
 	    // console.log(e)
             setTimeout( () => {
 			cnf.updatePresence(from, Presence.composing)
-			reply(`✧ *APORTA O SERÁ ELIMINADO, BAN ACTIVADO* ✧`)
+			reply(`✧ *APORTA O SERÁ ELIMINADO BAN ACTIVADO* ✧`)
 		}, 2000)
         break
       
