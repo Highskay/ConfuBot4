@@ -1157,12 +1157,20 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
     };
     
     if (isGroup && isAntilink && !mek.key.fromMe) {
-      if (budy.includes("://https.chat.whatsapp.com/")) {
+      if (budy.includes("://chat.whatsapp.com/")) {
         if (isGroupAdmins) return
         reply("*ENLACE DETECTADO!!* *NO SE PERMITEN ENLACES TE MATO PERRA HDP*");
         cnf.groupRemove(from, [sender]); 
       }
     }
+
+    if (isGroup && isAntilink && !mek.key.fromMe) {
+      if (budy.includes("https://")) {
+        if (isGroupAdmins) return
+        reply("*ENLACE DETECTADO!!* *NO SE PERMITEN ENLACES TE MATO PERRA HDP*");
+        cnf.groupRemove(from, [sender]);
+       }
+     }
 
     if (isGroup && isAntivirtex && !mek.key.fromMe) {
       if (budy.length > 500000) {
