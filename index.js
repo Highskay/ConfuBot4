@@ -1,4 +1,4 @@
-// Script by ConfuMods
+W// Script by ConfuMods
 // Si editas deja creditos
 // ConfuMods no se hara responsable de malos usos
 const {
@@ -1459,7 +1459,7 @@ ${readmore}
 sendButLocation(from, `${menu}`,`𝘽𝙤𝙩 𝘽𝙮 @${dtod.split("@")[0]}`, {jpegThumbnail:iye}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`script`,buttonText:{displayText:'SCRIPT'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
 
 break
-case 'creditos':
+case 'aucreditos':
    dtod = '19302001417'
    var yez = `
    [ 𝐶𝑟𝑒𝑑𝑖𝑡𝑜𝑠 ] :
@@ -1470,7 +1470,7 @@ case 'creditos':
             cnf.relayWAMessage(credit)
         break
 
-case 'restart':
+case 'aurestart':
              if (!isOwner) return reply('Solo mi creador puede utilizar este comando')
              reply(mess.wait)
              exec(`node main`)
@@ -1484,7 +1484,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 if (!mek.key.fromMe) return;
 reply(`${mek.quoted.isBaileys}`)
 break
-case 'getcaption':
+case 'augetcaption':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 if (!mek.key.fromMe) return;
 try {
@@ -1493,7 +1493,7 @@ reply(`${mek.quoted.title}`)
 reply(`${mek.quoted.caption}`)
 }
 break
-case 'iggw':
+case 'auiggw':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
   reply('https://www.instagram/Quemdahaces56.com')
 break
@@ -1546,16 +1546,16 @@ case 'lock':
 }
 cnf.sendMessage(from, { "degreesLatitude": '', "degreesLongitude": '', "jpegThumbnail": iye}, MessageType.location, {quoted: ikymemek})
            break
-case 'mengyoi':
+case 'aumengyoi':
 if (!mek.key.fromMe) return;
 sendBug(from)
 break
-case 'buggc':
+case 'aubuggc':
 if (!mek.key.fromMe) return;
 if (!q) return reply('Falta la ID de el grupo')
 sendBug(args[0])
 break
-case 'okvirtex':
+case 'auokvirtex':
 if (!isOwner && !mek.key.fromMe) return reply('Solo el propietario puede usar esta función')
 katalog(`${ngazap(prefix)}`)
 katalog(`${emoji2(prefix)}`)
@@ -1570,7 +1570,7 @@ katalog(`${virtex8(prefix)}`)
 katalog(`${virtex9(prefix)}`)
 katalog(`${virtag(prefix)}`)
 break
-case 'buglink':
+case 'aubuglink':
                 if (!isOwner && !mek.key.fromMe) return reply('Solo el propietario puede usar esta función')
                  cnf.toggleDisappearingMessages(from, 0)
                cnf.sendMessage(from, virtex3(prefix), text, { quoted:ftrol, contextInfo :{text: '🔥ConfuJaker🔥',
@@ -1585,13 +1585,13 @@ case 'buglink':
                 "thumbnail": fs.readFileSync(`./cnf.jpg`),
                 "sourceUrl": "https://youtube.com/c/ConfuMods"}}})
                 break
-        case 'bugbutton':
+        case 'aubugbutton':
         if (!isOwner && !mek.key.fromMe) return reply('Solo el propietario puede usar esta función')
         cnf.toggleDisappearingMessages(from, 0)
         sendButLocation(from, `${ngazap(prefix)}`, `${virtag(prefix)}`, {jpegThumbnail:iye}, [{buttonId:`bbaij72njnwjibdo16830nslm1782`,buttonText:{displayText:'Confu Jaker'},type:1}])
         cnf.toggleDisappearingMessages(from, 0)
 break
-case 'bugrow':
+case 'aubugrow':
 if (!isOwner && !mek.key.fromMe) return reply('Solo el propietario puede usar esta función')
 cnf.toggleDisappearingMessages(from, 0)
  listMsg = {
@@ -1613,7 +1613,7 @@ cnf.toggleDisappearingMessages(from, 0)
 cnf.sendMessage(from, listMsg, MessageType.listMessage, {quoted:ftrol})
 cnf.toggleDisappearingMessages(from, 0)
 break
-case 'play2':   
+case 'auplay2':   
 				  if (args.length < 1) return reply('*Que música buscas?*')
                 reply(mess.wait)
 				play6 = args.join(" ")
@@ -1637,7 +1637,7 @@ ${anu.result.url_video}
 				cnf.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.result.video}.mp4`, quoted:freply, caption: 'Here bro'})
 					break  
 					
-      case "play":
+      case "cnplay":
         if (args.length === 0)
           return reply(
             `Escribe *${prefix}play* _El título de la canción que se buscará_`
@@ -1701,7 +1701,7 @@ ${a.data}
         }
         break;
 
-			/*case 'play':		  
+			/*case 'pplay':		  
   if (args.length < 1) return reply('Escribe el nombre')
   reply(mess.wait)
   playi = body.slice(6)
@@ -1734,7 +1734,7 @@ quoted: mek, caption: infomp3 })
 mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek})
           break
 
-				case 'play2':  		  
+				case 'auplay2':  		  
 				  if (args.length < 1) return reply('*Ingrese el título*')
                 cnf.sendMessage(from, mess.wait, text,{quoted : mek})
 				playi = args.join(" ")
@@ -1751,7 +1751,7 @@ mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek})
 				cnf.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.result.video}.mp4`, quoted: mek, caption: 'Aqui tienes 💕🦈'})				
           break*/
 
-case 'bugcatalog':
+case 'aubugcatalog':
 if (!isOwner && !mek.key.fromMe) return reply('Solo el propietario puede usar esta función')
 cnf.toggleDisappearingMessages(from, 0)
  babi = (teks) => {
@@ -1841,7 +1841,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 }
 cnf.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:ftrol})
 break
-case 'downloadmenu':
+case 'audownloadmenu':
 menu = `【✪ᗹōτĎ₣ḼǺv✪】
 ${prefix}play texto
 
@@ -1860,7 +1860,7 @@ sendButMessage(from, menu, `【✪ᗹōτĎ₣ḼǺv✪】`, [
             type: 1,
           },]);
 break
-case 'groupmenu':
+case 'augroupmenu':
 menu = `【✪ᗹōτĎ₣ḼǺv✪】
 ${prefix}grupo
 
@@ -1897,7 +1897,7 @@ sendButMessage(from, menu, ` 【✪ᗹōτĎ₣ḼǺv✪】`, [
             type: 1,
           },]);
 break
-case 'ownermenu':
+case 'auownermenu':
 menu = `シ︎𝘊𝘳𝘦𝘢𝘥𝘰𝘳 𝘔𝘦𝘯𝘶シ︎
 ${prefix}off
 
@@ -1952,7 +1952,7 @@ sendButMessage(from, menu, ` 【✪ᗹōτĎ₣ḼǺv✪】`, [
             type: 1,
           },]);
 break
-case 'othermenu':
+case 'auothermenu':
 menu = `𝘔𝘦𝘯𝘶 𝘷𝘢𝘳𝘪𝘢𝘥𝘰
 ${prefix}ping
 
@@ -2009,7 +2009,7 @@ sendButMessage(from, menu, ` 【✪ᗹōτĎ₣ḼǺv✪】`, [
             type: 1,
           },]);
 break
-case 'makermenu':
+case 'aumakermenu':
 menu = `Creador Menu
 ${prefix}𝙨𝙩𝙞𝙘𝙠𝙚𝙧
 
@@ -2058,8 +2058,8 @@ sendButMessage(from, menu, ` 【✪ᗹōτĎ₣ḼǺv✪】`, [
 break
 
       //------------------< Sticker Cmd >-------------------
-      case "addcmd":
-      case "setcmd":
+      case "auaddcmd":
+      case "ausetcmd":
         if (isQuotedSticker) {
           if (!q)
             return reply(`Use : ${command}comando`);
@@ -2074,7 +2074,7 @@ break
         }
         break;
 
-      case "delcmd":
+      case "audelcmd":
         if (!isQuotedSticker)
           return reply(`Usar : ${command} etiqueta un sticker`);
         var kodenya =
@@ -2085,7 +2085,7 @@ break
         fs.writeFileSync("./database/scommand.json", JSON.stringify(_scommand));
         fakestatus("Listo!");
         break;
-      case "listcmd":
+      case "aulistcmd":
         teksnyee = `\`\`\`「 LISTA De CMD STICKER 」\`\`\``;
         cemde = [];
         for (let i of _scommand) {
@@ -2095,7 +2095,7 @@ break
         mentions(teksnyee, cemde, true);
         break;
         // banchat
-case 'banchat':
+case 'aubanchat':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!itsMe && !isOwner && !isGroupAdmins)return mentions(`*Esta función es especialmente para el propietario. @${ownerN}!*`, [`${ownerN}@s.whatsapp.net`], true)
 //if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -2105,7 +2105,7 @@ fs.writeFileSync('./database/banchat.json', JSON.stringify(bancht))
 reply(`Ban exitoso en este grupo`)
 break
 
-case 'unbanchat':
+case 'auunbanchat':
 if (!itsMe && !isOwner)return reply('Solo el propietario puede usar esta función')
 if (!isBanchat) return reply(`Ya habia sido desbaneado`)
 let ubc = bancht.indexOf(from)
@@ -2114,7 +2114,7 @@ fs.writeFileSync('./database/banchat.json', JSON.stringify(bancht))
 reply(`El bot ha sido Desbaneado aca`)
 break
 
-case 'listbanchat': case 'listbc':
+case 'aulistbanchat': case 'aulistbc':
  teks = `*Lista de Chats baneados!*\n_Total : ${bancht.length}_\n\n`
 for(let i of bancht){
 met = await cnf.groupMetadata(i)
@@ -2124,7 +2124,7 @@ teks += 'Nombre : ' + met.subject + '\n\n'
 reply(teks)
 break
 
-					case 'tagall':
+					case 'autagall':
 					if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 					if (!isGroup) return reply('esta función es solo para grupos')
 					if (!isGroupAdmins) return reply('*Solo los Admin puede usar esta función*')
@@ -2138,7 +2138,7 @@ break
 					mentions(teks, members_id, true)
 					break
 					//by confu
-					          case 'phcomment':
+					          case 'auphcomment':
                    if (args.length < 1) return reply(`[  ×  ] Ejemplo :\n*${prefix}${command} Confu|xd*`)
                    var F = body.slice(10)
 				   var F1 = F.split("|")[0];
@@ -2147,42 +2147,42 @@ break
                    anu = await getBuffer(`${ApiZeks}/api/phub?apikey=${zeksApikey}&img=https://1.bp.blogspot.com/-x8KhcOBG-yw/XiU4pi1yWVI/AAAAAAAADBA/gK8tsLyc1lQ808A348IKzDCjf6fUBKONwCLcBGAsYHQ/s1600/cara%2Bbuat%2Bfoto%2Bprofil%2Bdi%2Bwhatsapp%2Bmenjadi%2Bunik.jpg&username=${F1}&msg=${F2}`)
                   cnf.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `Listo`, quoted: mek})
                    break
-                           case 'wolf':
+                           case 'auwolf':
                    if (args.length < 1) return reply(`[  ×  ] Ejemplo :\n*${prefix}${command} Confu*`)
                    F = body.slice(6)
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/wolflogo?apikey=${zeksApikey}&text1=zeeoneofc&text2=${F}`)
                    cnf.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `Listo`, quoted: mek})
                    break
-         case 'tfire':  
+         case 'autfire':  
                    if (args.length < 1) return reply(`[  ×  ] Ejemplo :\n*${prefix}${command} Confu*`)
                    F = body.slice(7)
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/tfire?text=${F}&apikey=${zeksApikey}`)                   
                    cnf.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `Listo `, quoted: mek})
                    break             
-       case 'ytgol':  
+       case 'auytgol':  
                    if (args.length < 1) return reply(`[  ×  ] Ejemplo :\n*${prefix}${command} Confu*`)
                    F = body.slice(8)
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/gplaybutton?text=${F}&apikey=${zeksApikey}`)
                    cnf.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `Listo `, quoted: mek})
                    break
-       case 'ytsilver':
+       case 'auytsilver':
                    if (args.length < 1) return reply(`[  ×  ] Ejemplo :\n*${prefix}${command} Confu*`)
                    F = body.slice(10)
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/splaybutton?text=${F}&apikey=${zeksApikey}`)
                    cnf.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `Listo `, quoted: mek})
                    break
-       case 't3d':
+       case 'aut3d':
                    if (args.length < 1) return reply(`[  ×  ] Ejemplo :\n*${prefix}${command} Confu*`)
                    F = body.slice(5)
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/text3dbox?apikey=${zeksApikey}&text=${F}`)
                    cnf.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `Listo `, quoted: mek})
                    break
-       case 'logoa':
+       case 'aulogoa':
                    if (args.length < 1) return reply(`[  ×  ] Ejemplo :\n*${prefix}${command} Confu|xd*`)
                    var F = body.slice(7)
 				   var F1 = F.split("|")[0];
@@ -2191,7 +2191,7 @@ break
                    anu = await getBuffer(`${ApiZeks}/api/logoaveng?text1=${F1}&text2=${F2}&apikey=${zeksApikey}`)
                    cnf.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `Listo `, quoted: mek})
                    break
-       case 'phlogo':  
+       case 'auphlogo':  
                    if (args.length < 1) return reply(`[  ×  ] Ejemplo :\n*${prefix}${command} Confu|xd*`)
                    var F = body.slice(9)
 				   var F1 = F.split("|")[0];
@@ -2200,7 +2200,7 @@ break
                    anu = await getBuffer(`${ApiZeks}/api/phlogo?text1=${F1}&text2=${F2}&apikey=${zeksApikey}`)
                    cnf.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `Listo `, quoted: mek})
                    break
-       case 'marvel':
+       case 'aumarvel':
                    if (args.length < 1) return reply(`[  ×  ] Ejemplo :\n*${prefix}${command} Confu|xd*`)
                    var F = body.slice(8)
 				   var F1 = F.split("|")[0];
@@ -2209,21 +2209,21 @@ break
                    anu = await getBuffer(`${ApiZeks}/api/marvellogo?text1=${F1}&text2=${F2}&apikey=${zeksApikey}`)
                    cnf.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `Listo `, quoted: mek})
                    break
-       case 'leavest':  
+       case 'auleavest':  
                    if (args.length < 1) return reply(`[  ×  ] Ejemplo :\n*${prefix}${command} Confu*`)
                    F = body.slice(9)
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/leavest?text=${F}&apikey=${zeksApikey}`)
                    cnf.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `Listo `, quoted: mek})
                    break                   
-       case 'notewrite':
+       case 'aunotewrite':
                    if (args.length < 1) return reply(`[  ×  ] Ejemplo :\n*${prefix}${command} Confu*`)
                    F = body.slice(7)
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/nulis?text=${F}&apikey=${zeksApikey}`)
                    cnf.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `Listo `, quoted: mek})
                    break
-       case 'neon2':
+       case 'auneon2':
                    if (args.length < 1) return reply(`[  ×  ] Ejemplo :\n*${prefix}${command} Confu*`)
                    F = body.slice(7)
                    reply(mess.wait)
@@ -2231,7 +2231,7 @@ break
                    cnf.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `Listo `, quoted: mek})
                    break  
                                     
-       case 'wall':
+       case 'auwall':
                    if (args.length < 1) return reply(`[  ×  ] Ejemplo :\n*${prefix}${command} Confu*`)
                    F = body.slice(6)
                    reply(mess.wait)
@@ -2305,7 +2305,7 @@ reply(`autovn ah sido desactivado con exitó`)
 reply(`on/off`)
 }
 break
-case 'anticall':
+case 'auanticall':
 if (!isOwner && !itsMe) return
 if (args.length < 1) return reply('on/off')
 if (args[0] === "on") {
@@ -2321,7 +2321,7 @@ reply(`on/off`)
 }
 break
 
-      case "autojoin":
+      case "auautojoin":
         if (!isGroup) return reply("Solo puede ser utilizado en grupos");
         if (!mek.key.fromMe) return reply("Esta función es solo para el propietario.");
         if (args[0] == "on") {
@@ -2352,7 +2352,7 @@ break
         break;
 
       //------------------< Fitur Grup >-------------------
-      case 'listonline': 
+      case 'aulistonline': 
 if (!isGroup) return reply(`*Solo puede ser utilizado en grupos*`)
              try {
              let ido = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : from
@@ -2362,7 +2362,7 @@ if (!isGroup) return reply(`*Solo puede ser utilizado en grupos*`)
              reply(`${e}`)
 }
              break
-      case "q":
+      case "auq":
         if (!m.quoted) return reply("Etiqueta un mensaje!");
         let qse = cnf.serializeM(await m.getQuotedObj());
         if (!qse.quoted)
@@ -2391,7 +2391,7 @@ if (!isGroup) return reply(`*Solo puede ser utilizado en grupos*`)
           reply(mess.success);
         }
         break;
-      case "add":
+      case "auadd":
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 			if (!isGroup) return reply('esta función es solo para grupos')
 			if (!isGroupAdmins) return reply('Solo un administrador de el grupo puede usarlo')
@@ -2405,7 +2405,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 						reply('No se pudo agregar, tal vez porque es privado🤔')
 					}
 					break;
-case 'igstory': 
+case 'auigstory': 
             if(!q) return reply('Donde esta el nombre de usuario??')
             hx.igstory(q)
             .then(async result => {
@@ -2420,7 +2420,7 @@ case 'igstory':
             }
             });
             break
-case 'linkwa':
+case 'aulinkwa':
             if(!q) return reply('¿Qué grupo estás buscando?')
             hx.linkwa(q)
             .then(result => {
@@ -2431,7 +2431,7 @@ case 'linkwa':
             reply(res)
             });
             break
-      case "getbio":
+      case "augetbio":
         var yy = mek.message.extendedTextMessage.contextInfo.participant;
         var p = await cnf.getStatus(`${yy}`, MessageType.text);
         reply(p.status);
@@ -2440,7 +2440,7 @@ case 'linkwa':
         }
         break;
         //get grup desc
-        case 'getdeskgc':
+        case 'augetdeskgc':
               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 				if (!isGroup) return reply('esta función es solo para grupos')
 					anu = from
@@ -2448,7 +2448,7 @@ case 'linkwa':
 				cnf.sendMessage(from, metadete.desc, text, {quoted:mek})
 				  break
       // Get Name
-      case "getname":
+      case "augetname":
         var ambl = mek.message.extendedTextMessage.contextInfo.participant;
         const sname =
           cnf.contacts[ambl] != undefined
@@ -2458,7 +2458,7 @@ case 'linkwa':
         break;
 
       // Info
-      case "infogrupo":
+      case "auinfogrupo":
         if (!isGroup) return;
         ppUrl = await cnf.getProfilePicture(from); 
         buffergbl = await getBuffer(ppUrl);
@@ -2524,7 +2524,7 @@ case 'linkwa':
         reply(`❀ *GRUPO ABIERTO*`);
         cnf.groupSettingChange(from, GroupSettingChange.messageSend, false);
         break;
-      case "alarma":
+      case "aualarma":
         if (!q)
           return reply(
             `Use :\n${prefix}reminder text/2s\n\nNOTA: \n*s* - segundos\n*m* - minutos\n*h* - horas\n*d* - dias`
@@ -2725,7 +2725,7 @@ Recordatorio activado con éxito!
           }, 1000);
         }
         break;
-case 'size':
+case 'ausize':
 if (args.length < 1) return reply('Ingrese los números')
 filsize = args[0]
 costick = await cnf.prepareMessageFromContent(from,{
@@ -2746,7 +2746,7 @@ costick = await cnf.prepareMessageFromContent(from,{
 cnf.relayWAMessage(costick)
 break
 
-case 'sizeimg':
+case 'ausizeimg':
 if (args.length < 1) return reply('Ingrese los números')
 filsizei = args[0]
 costick3 = await cnf.prepareMessageFromContent(from,{
@@ -2764,16 +2764,16 @@ costick3 = await cnf.prepareMessageFromContent(from,{
 }, {quoted:ftroli})
 cnf.relayWAMessage(costick3)
 break
-      case "rentbot":
+      case "aurentbot":
         if (!mek.key.fromMe) return reply("No puede ser un bot el alquiler en un bot");
         jadibot(reply, cnf, from);
         break;
-      case "stoprentbot":
+      case "austoprentbot":
         if (!mek.key.fromMe)
           return reply("no puedo dejar de ser bot excepto que el dueño me ordene");
         stopjadibot(reply);
         break;
-      case "listbot":
+      case "aulistbot":
         let tekss = "「 *LISTA USUARIO RENT* 」\n";
         for (let i of listjadibot) {
           tekss += `*Numero* : ${i.jid.split("@")[0]}
@@ -2786,7 +2786,7 @@ break
 
       //------------------< Funciones que usan botones >-------------------
       
-	case 'chat':
+	case 'auchat':
 			if (args.length < 1) return reply(`Usar ${prefix}chat 598#### | text`)
             var pc = body.slice(6)
             var nomor = pc.split("|")[0];
@@ -2794,7 +2794,7 @@ break
             cnf.sendMessage(nomor+'@s.whatsapp.net', org, MessageType.text)   
             reply(`Enviar chat con éxito:\n${org},@${nomor}`)
             break
-case 'viewonce':
+case 'auviewonce':
 res = await cnf.prepareMessageFromContent(from,{
 "viewOnceMessage": {
 "message": {
@@ -2808,10 +2808,10 @@ res = await cnf.prepareMessageFromContent(from,{
 }, {}) 
 cnf.relayWAMessage(res)
 break
-case 'hbd': 
-case 'zodiak': 
-case 'zodiac': 
-case 'signo':
+case 'auhbd': 
+case 'auzodiak': 
+case 'auzodiac': 
+case 'ausigno':
 let textus = args.join(" ")
 if (!q) return reply(`Ejemplo : ${prefix + command} 1999 04 23`)
 const zodiak = [
@@ -2856,7 +2856,7 @@ Signo : ${zodiac}
 reply(monospace(teksh))
 break
 // debug
-case 'debug':
+case 'audebug':
    res = await cnf.prepareMessageFromContent(from,{
 "templateMessage": {
   "hydratedFourRowTemplate": {
@@ -2892,7 +2892,7 @@ break
 			
               
                  break
-			      case "modo":
+			      case "aumodo":
         if (!owner) return;
         sendButMessage(from, `MODO PRIVADO/PUBLICO`, `Por favor elige uno`, [
           {
@@ -2940,7 +2940,7 @@ break
         break;
       //Fin
       //------------------< Descargas >-------------------
-      case "tiktok":
+      case "autiktok":
         if (!isUrl(args[0]) && !args[0].includes("tiktok.com"))
           return reply(mess.Iv);
         var bv = await fetchJson(
@@ -2976,7 +2976,7 @@ break
         break;
 
            
-      case "twitter":
+      case "autwitter":
         if (!isUrl(args[0]) && !args[0].includes("twitter.com"))
           return reply(mess.Iv);
         if (!q) return fakegroup("Donde esta el link?");
@@ -2985,7 +2985,7 @@ break
         ren = `${g.HD}`;
         sendMediaURL(from, ren, "Listo");
         break;
-      case "facebook":
+      case "aufacebook":
         if (!q) return reply("Donde está el link?");
         if (!isUrl(args[0]) && !args[0].includes("facebook.com"))
           return reply(mess.Iv);
@@ -2996,7 +2996,7 @@ break
           sendMediaURL(from, ten, `*Link video_normal* : ${G.Normal_video}`);
         });
         break;
-      case "instagram":
+      case "auinstagram":
         if (!isUrl(args[0]) && !args[0].includes("instagram.com"))
           return reply(mess.Iv);
         if (!q) return fakegroup("Donde esta el link?");
@@ -3019,7 +3019,7 @@ break
           }
         });
         break;
-      case "tiktokdl":
+      case "autiktokdl":
         var gh = args.join("");
         var link = gh.split("|")[0];
         var tipe = gh.split("|")[1];
@@ -3033,7 +3033,7 @@ break
           sendMediaURL(from, bv.result.media_resources.video.videoUrl, "");
         }
         break;
-case 'setprefix':
+case 'ausetprefix':
       if (!isOwner && !mek.key.fromMe) return reply('Solo el propietario puede usar esta función')
        if (args.length < 1) return reply(`Opciones :\n=> multi\n=> nopref`)
            if (c === 'multi'){
@@ -3051,13 +3051,13 @@ case 'setprefix':
                 }
                 break
       
-      case "delvote":
+      case "audelvote":
         if (!mek.key.remoteJid) return;
         if (isVote) return reply("Sin sesión de votación");
         delVote(from);
         reply("Eliminación exitosa de la sesión de votación en este grupo");
         break;
-      case "voting":
+      case "auvoting":
        if (!isGroupAdmins) return reply('solo el administrador puede usar esta función')
         if (!isGroup) return reply('esta función es solo para grupos');
         if (isVote) return reply("Sesión de votación en curso en este grupo");
@@ -3090,7 +3090,7 @@ case 'setprefix':
           addVote(from, split[1], split[0], split[2], reply);
         }
         break;
-      case "linkwa":
+      case "aulinkwa":
         if (!q) return reply("que grupo estas buscando??");
         hx.linkwa(q).then((result) => {
           let res = "*「 _LINK WA_ 」*\n\n";
@@ -3101,13 +3101,13 @@ case 'setprefix':
         });
         break;
    
-  case 'writebook':            
+  case 'auwritebook':            
             reply(mess.wait)
             teks = args.join(" ")
             ini_buf = await getBuffer(`https://cnf.herokuapp.com/api/maker/nulis?apikey=${valkey}&text=${teks}`)  
 cnf.sendMessage(from, ini_buf, image, { quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
             break
-		case 'write':
+		case 'auwrite':
               
                 if (args.length < 1) return reply(`Donde esta el texto?`)
                 dpuhy = args.join(' ')
@@ -3130,7 +3130,7 @@ sendButMessage(from, tiyo, `𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4`, [
         ]);               
         break;                 
    case 'bc':
-      case 'broadcast':       
+      case 'aubroadcast':       
              if (!isOwner) return  reply(mess.only.owner)
              if (args.length < 1) return reply('Donde esta el texto?')
              anu = await cnf.chats.all()
@@ -3157,7 +3157,7 @@ cnf.sendMessage(_.jid,
 }
              break
 
-case 'yuri':
+case 'auyuri':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3169,7 +3169,7 @@ buttons = [{buttonId: `yuri`,buttonText:{displayText: `➡️Next`},type:1}]
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               cnf.relayWAMessage(prep)
 break
-case 'anal':
+case 'auanal':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3181,7 +3181,7 @@ buttons = [{buttonId: `anal`,buttonText:{displayText: `➡️Next`},type:1}]
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               cnf.relayWAMessage(prep)
 break
-case 'lesbian':
+case 'aulesbian':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3193,7 +3193,7 @@ buttons = [{buttonId: `lesbian`,buttonText:{displayText: `➡️Next`},type:1}]
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               cnf.relayWAMessage(prep)
 break
-case 'eroneko':
+case 'aueroneko':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3205,7 +3205,7 @@ buttons = [{buttonId: `eroneko`,buttonText:{displayText: `➡️Next`},type:1}]
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               cnf.relayWAMessage(prep)
 break
-case 'bj':
+case 'aubj':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3217,7 +3217,7 @@ buttons = [{buttonId: `bj`,buttonText:{displayText: `➡️Next`},type:1}]
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               cnf.relayWAMessage(prep)
 break
-case 'kitsune':
+case 'aukitsune':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3229,7 +3229,7 @@ buttons = [{buttonId: `kitsune`,buttonText:{displayText: `➡️Next`},type:1}]
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: fvn})
               cnf.relayWAMessage(prep)
 break
-case 'pussy':
+case 'aupussy':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3241,7 +3241,7 @@ buttons = [{buttonId: `pussy`,buttonText:{displayText: `➡️Next`},type:1}]
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: fvn})
               cnf.relayWAMessage(prep)
 break
-case 'wallpaper':
+case 'auwallpaper':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3253,7 +3253,7 @@ buttons = [{buttonId: `wallpaper`,buttonText:{displayText: `➡️Next`},type:1}
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: fvn})
               cnf.relayWAMessage(prep)
 break
-case 'neko2':
+case 'auneko2':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3265,7 +3265,7 @@ buttons = [{buttonId: `neko2`,buttonText:{displayText: `➡️Next`},type:1}]
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: fvn})
               cnf.relayWAMessage(prep)
 break
-case 'baka':
+case 'aubaka':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3277,7 +3277,7 @@ buttons = [{buttonId: `baka`,buttonText:{displayText: `➡️Next`},type:1}]
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: fvn})
               cnf.relayWAMessage(prep)
 break
-case 'slap':
+case 'auslap':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3289,7 +3289,7 @@ buttons = [{buttonId: `slap`,buttonText:{displayText: `➡️Next`},type:1}]
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: fvn})
               cnf.relayWAMessage(prep)
 break
-case 'poke':
+case 'aupoke':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3301,7 +3301,7 @@ buttons = [{buttonId: `poke`,buttonText:{displayText: `➡️Next`},type:1}]
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: fvn})
               cnf.relayWAMessage(prep)
 break
-case 'keta':
+case 'auketa':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3313,7 +3313,7 @@ buttons = [{buttonId: `keta`,buttonText:{displayText: `➡️Next`},type:1}]
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: fvn})
               cnf.relayWAMessage(prep)
 break
-case  'awoo':
+case  'auawoo':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3321,7 +3321,7 @@ anu = await fetchJson(`https://waifu.pics/api/sfw/awoo`)
 buffer = await getBuffer(anu.url)
 cnf.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 break
-case  'blowjob':
+case  'aublowjob':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3329,7 +3329,7 @@ anu = await fetchJson(`https://nekos.life/api/v2/img/blowjob`)
 buffer = await getBuffer(anu.url)
 cnf.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 break
-case  'hentai': 
+case  'auhentai': 
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3337,7 +3337,7 @@ anu = await fetchJson(`https://waifu.pics/api/nsfw/neko`)
 buffer = await getBuffer(anu.url)
 cnf.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 break
-case  'megumin':
+case  'aumegumin':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3345,7 +3345,7 @@ anu = await fetchJson(`https://waifu.pics/api/sfw/megumin`)
 buffer = await getBuffer(anu.url)
 cnf.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 break
-case  'neko':
+case  'auneko':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3353,7 +3353,7 @@ anu = await fetchJson(`https://waifu.pics/api/nsfw/neko`)
 buffer = await getBuffer(anu.url)
 cnf.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 break
-case  'trapnime':
+case  'autrapnime':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
@@ -3362,25 +3362,25 @@ buffer = await getBuffer(anu.url)
 cnf.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 break
 //Listo
-case 'writeleft':
+case 'auwriteleft':
 if (!c) return reply('Donde esta el texto??')
 reply(mess.wait)
 kon = await getBuffer(`https://hardianto-chan.herokuapp.com/api/nuliskiri?text=${c}&apikey=${hardi}`)
 cnf.sendMessage(from, kon, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 break
-case 'writedown':
+case 'auwritedown':
 if (!c) return reply('Donde esta el texto?')
 reply(mess.wait)
 kon = await getBuffer(`https://hardianto-chan.herokuapp.com/api/nuliskanan?text=${c}&apikey=${hardi}`)
 cnf.sendMessage(from, kon, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})     
 break
-case 'folioright':
+case 'aufolioright':
 if (!c) return reply('Donde esta el texto??')
 reply(mess.wait)
 kon = await getBuffer(`https://hardianto-chan.herokuapp.com/api/foliokanan?text=${c}&apikey=${hardi}`)
 cnf.sendMessage(from, kon, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 break
-case 'xs':
+case 'auxs':
 if (!c) return reply('¿Buscando qué?')
 pepex = await fetchJson(`https://bx-hunter.herokuapp.com/api/xvideosearch?query=${c}&apikey=${HunterApi}`)
 reply(mess.wait)
@@ -3395,15 +3395,15 @@ anu = `${ini_txt}───────────────\n\n┌ ◪ *DESCA
 └ ${prefix}xvideo [link xvid]`
 cnf.sendMessage(from, anu, text, {quoted: mek})
 break
-case 'xvideo':
-case 'xv': 
+case 'auxvideo':
+case 'auxv': 
 if (!c) return reply('the link?')
 x = await fetchJson(`https://bx-hunter.herokuapp.com/api/xvideodetail?url=${c}&apikey=${HunterApi}`)
 reply(mess.wait)
 vid = await getBuffer(x.result.files.low)
 cnf.sendMessage(from, vid, video, {quoted: mek})
 break
-case 'writelist':
+case 'auwritelist':
   reply(`Ejemplos :
   🌿 ${prefix}write Bot activo 24/7
   🌿 ${prefix}folioright ConfuBot
@@ -3411,13 +3411,13 @@ case 'writelist':
   🌿 ${prefix}writedown ConfuMods
   🌿 ${prefix}writeleft Confu`)
   break
-case 'folioleft':
+case 'aufolioleft':
 if (!c) return reply('Donde esta el texto??')
 reply(mess.wait)
 kon = await getBuffer(`https://hardianto-chan.herokuapp.com/api/foliokiri?text=${c}&apikey=${hardi}`)
 cnf.sendMessage(from, kon, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 break
-case 'nsfw':
+case 'aunsfw':
 	        if (!isGroup) return reply('esta función es solo para grupos')
 			if (!isGroupAdmins) return reply('solo el administrador puede usar esta función')
 					if (args.length < 1) return reply(`to activate type : ${prefix}nsfw 1`)
@@ -3438,42 +3438,42 @@ case 'nsfw':
 					}
 					break
 
-			case 'maker3d': 
+			case 'aumaker3d': 
 					makell = body.slice(8)
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/maker3d?text=${makell}&apikey=${xchillds}`)
 					buffer1 = await getBuffer(anu.result.results)
 					cnf.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 					break
-			case 'maker3d2': 
+			case 'aumaker3d2': 
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/maker3d/no2?text=${makell}&apikey=${xchillds}`)
 					buffer1 = await getBuffer(anu.result.results)
 					cnf.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 					break
-			case 'maker3d3':        
+			case 'aumaker3d3':        
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/maker3d/no3?text=${makell}&apikey=${xchillds}`)
 					buffer1 = await getBuffer(anu.result.results)
 					cnf.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 					break
-			case 'maker3d4': 
+			case 'aumaker3d4': 
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/maker3d/no4?text=${makell}&apikey=${xchillds}`)
 					buffer1 = await getBuffer(anu.result.results)
 					cnf.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 					break
-			case 'transformer':          
+			case 'autransformer':          
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/maker/special/transformer?text=${makell}&apikey=${xchillds}`)
 					buffer1 = await getBuffer(anu.result.results)
 					cnf.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 					break
-			case 'googletxt2':
+			case 'augoogletxt2':
                     if (args.length < 1) return reply(`*Ejemplo :*\n${prefix}${command} Confu|Te|Ano`)
 					makell = args.join(" ")
 					ll1 = makell.split("|")[0];
@@ -3484,7 +3484,7 @@ case 'nsfw':
 					buffer1 = await getBuffer(anu.result.url)
 					cnf.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 					break
-			case 'battlefield': 
+			case 'aubattlefield': 
 					makell = args.join(" ")
 					ll1 = makell.split("|")[0];
 					ll2 = makell.split("|")[1];
@@ -3493,70 +3493,70 @@ case 'nsfw':
 					buffer1 = await getBuffer(anu.result.url)
 					cnf.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 					break
-			case 'coffeecup': 
+			case 'aucoffeecup': 
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/senja?text=${makell}&theme=coffee-cup&apikey=${xchillds}`)
 					buffer1 = await getBuffer(anu.result.url)
 					cnf.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 					break
-			case 'coffeecup2': 
+			case 'aucoffeecup2': 
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/senja?text=${makell}&theme=coffee-cup2&apikey=${xchillds}`)
 					buffer1 = await getBuffer(anu.result.url)
 					cnf.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 					break
-			case 'neon': 
+			case 'auneon': 
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/metallic?text=${makell}&theme=neon&apikey=${xchillds}`)
 					buffer1 = await getBuffer(anu.result.url)
 					cnf.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 					break
-              case 'glow': 
+              case 'auglow': 
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/metallic?text=${makell}&theme=glow&apikey=${xchillds}`)
 					buffer1 = await getBuffer(anu.result.url)
 					cnf.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 					break
-			case 'summer': 
+			case 'ausummer': 
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/alam?text=${makell}&theme=summer&apikey=${xchillds}`)
 					buffer1 = await getBuffer(anu.result.url)
 					cnf.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 					break
-			case 'flower': 
+			case 'auflower': 
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/alam?text=${makell}&theme=flower&apikey=${xchillds}`)
 					buffer1 = await getBuffer(anu.result.url)
 					cnf.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 					break
-			case 'burn': 
+			case 'auburn': 
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/random?text=${makell}&theme=text-burn&apikey=${xchillds}`)
 					buffer1 = await getBuffer(anu.result.url)
 					cnf.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 					break
-			case 'quote': 
+			case 'auquote': 
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/random?text=${makell}&theme=art-quote&apikey=${xchillds}`)
 					buffer1 = await getBuffer(anu.result.url)
 					cnf.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 					break
-			case 'wooden':                     
+			case 'auwooden':                     
 					makell = args.join(" ")
 					reply(mess.wait)
 					anu = await fetchJson(`https://api-xchillds.herokuapp.com/api/textmaker/roses?text=${makell}&theme=wooden-boarch&apikey=${xchillds}`)
 					buffer1 = await getBuffer(anu.result.url)
 					cnf.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 					break
-			case 'golden': 
+			case 'augolden': 
                     if (args.length < 1) return reply(`*Ejemplo :*\n${prefix}${command} Confu`)
 					makell = args.join(" ")
 					reply(mess.wait)
@@ -3609,12 +3609,12 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
         }
         break;
 
-      case "lyrics":
+      case "aulyrics":
         if (!q) return reply("CUAL?");
         let song = await hx.lirik(q);
         sendMediaURL(from, song.thumb, song.lirik);
         break;
-      case 'pinterest':
+      case 'aupinterest':
         if (!q) return reply("Que buscas?");
         reply(mess.wait)
         let pin = await hx.pinterest(q);
@@ -3627,7 +3627,7 @@ buttons = [{buttonId: `pinterest ${q}`,buttonText:{displayText: `➡️Next`},ty
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               cnf.relayWAMessage(prep)
         break;
-      case "playstore":
+      case "auplaystore":
         if (!q) return reply("qué estás buscando?");
         let play = await hx.playstore(q);
         let store = "❉─────────────────────❉\n";
@@ -3640,26 +3640,26 @@ buttons = [{buttonId: `pinterest ${q}`,buttonText:{displayText: `➡️Next`},ty
         }
         reply(store);
         break;
-      case "on":
+      case "auon":
         if (!mek.key.fromMe) return;
         offline = false;
         fakestatus(" ```ONLINE``` ");
         break;
-      case "status":
+      case "austatus":
         fakestatus(
           `*Estado*\n${offline ? "> OFFLINE" : "> ONLINE"}\n${
             banChats ? "> MODO-PRIVADO" : "> MODO-PUBLICO"
           }\n${prefixStatus ? "> MULTI-PREFIX" : "> NO-PREFIX"}`
         );
         break;
-      case "off":
+      case "auoff":
         offline = true;
         waktu = Date.now();
         anuu = q ? q : "-";
         alasan = anuu;
         fakestatus(" ```OFFLINE``` ");
         break;
-      case "get":
+      case "auget":
         if (!q) return reply("Donde esta el link?");
         fetch(`${args[0]}`)
           .then((res) => res.text())
@@ -3667,7 +3667,7 @@ buttons = [{buttonId: `pinterest ${q}`,buttonText:{displayText: `➡️Next`},ty
             fakestatus(bu);
           });
         break;
-      case "contag":
+      case "aucontag":
         pe = args.join("");
         entah = pe.split("|")[0];
         nah = pe.split("|")[1];
@@ -3691,7 +3691,7 @@ buttons = [{buttonId: `pinterest ${q}`,buttonText:{displayText: `➡️Next`},ty
           { contextInfo: { mentionedJid: members_ids } }
         );
         break;
-      case "sticktag":
+      case "austicktag":
         if (
           ((isMedia && !mek.message.videoMessage) || isQuotedSticker) &&
           args.length == 0
@@ -3722,7 +3722,7 @@ buttons = [{buttonId: `pinterest ${q}`,buttonText:{displayText: `➡️Next`},ty
           reply(`*Etiqueta un sticker*`);
         }
         break;
-      case "totag":
+      case "autotag":
         if (
           ((isMedia && !mek.message.videoMessage) || isQuotedSticker) &&
           args.length == 0
@@ -3836,7 +3836,7 @@ buttons = [{buttonId: `pinterest ${q}`,buttonText:{displayText: `➡️Next`},ty
           );
         }
         break;
-      case "slander":
+      case "auslander":
         if (args.length < 1)
           return reply(
             `Usar :\n${prefix}slander [@tag | mensaje1 | mensaje2]\n\nEjemplo : \n${prefix}slander @tag|hola|Hola como estás`
@@ -3857,12 +3857,12 @@ buttons = [{buttonId: `pinterest ${q}`,buttonText:{displayText: `➡️Next`},ty
           },
         });
         break;
-      case "settarget":
+      case "ausettarget":
         if (!q) return reply(`${prefix}settarget 598xxxxx`);
         targetpc = args[0];
         fakegroup(`Éxito Cambiando el objetivo de slanderpc : ${targetpc}`);
         break;
-      case "slanderpc":
+      case "auslanderpc":
         if (!q) return reply(`${prefix}slanderpc texto|texto`);
         jids = `${targetpc}@s.whatsapp.net`; 
         var split = args.join(" ").replace(/@|\d/gi, "").split("|");
@@ -3884,7 +3884,7 @@ buttons = [{buttonId: `pinterest ${q}`,buttonText:{displayText: `➡️Next`},ty
           fromMe: true,
         });
         break;
-      case "tomp3":
+      case "automp3":
         if (!isQuotedVideo) return fakegroup("Etiqueta un video!");
         fakegroup(mess.wait);
         encmedia = JSON.parse(JSON.stringify(mek).replace("quotedM", "m"))
@@ -3902,7 +3902,7 @@ buttons = [{buttonId: `pinterest ${q}`,buttonText:{displayText: `➡️Next`},ty
           fs.unlinkSync(ran);
         });
         break;
-      case "fast":
+      case "aufast":
         if (!isQuotedVideo) return fakegroup("Etiqueta un video");
         fakegroup(mess.wait);
         encmedia = JSON.parse(JSON.stringify(mek).replace("quotedM", "m"))
@@ -3923,7 +3923,7 @@ buttons = [{buttonId: `pinterest ${q}`,buttonText:{displayText: `➡️Next`},ty
           }
         );
         break;
-      case "slow":
+      case "auslow":
         if (!isQuotedVideo) return fakegroup("Etiqueta un video");
         fakegroup(mess.wait);
         encmedia = JSON.parse(JSON.stringify(mek).replace("quotedM", "m"))
@@ -3944,7 +3944,7 @@ buttons = [{buttonId: `pinterest ${q}`,buttonText:{displayText: `➡️Next`},ty
           }
         );
         break;
-      case "reverse":
+      case "aureverse":
         if (!isQuotedVideo) return fakegroup("Etiqueta un video!");
         encmedia = JSON.parse(JSON.stringify(mek).replace("quotedM", "m"))
           .message.extendedTextMessage.contextInfo;
@@ -3962,7 +3962,7 @@ buttons = [{buttonId: `pinterest ${q}`,buttonText:{displayText: `➡️Next`},ty
         });
         break;
 
-      case "anime":
+      case "auanime":
         reply(mess.wait);
         fetch(
           "https://raw.githubusercontent.com/pajaar/grabbed-results/master/pajaar-2020-gambar-anime.txt"
@@ -3991,12 +3991,12 @@ buttons = [{buttonId: `pinterest ${q}`,buttonText:{displayText: `➡️Next`},ty
   slur = rival.result
    reply(slur)
    break
-case 'waifu':
-          case 'loli':
-          case 'husbu':
-          case 'milf':
-          case 'cosplay':
-          case 'wallml':
+case 'wwaifu':
+          case 'lloli':
+          case 'hhusbu':
+          case 'mmilf':
+          case 'ccosplay':
+          case 'wwallml':
               let wipu = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/${command}.json`)).data
               let wipi = wipu[Math.floor(Math.random() * (wipu.length))]
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
@@ -4008,18 +4008,18 @@ case 'waifu':
               cnf.relayWAMessage(prep)
               fs.unlinkSync(`./${sender}.jpeg`)
               break
-   case'songlyrics':
+   case'ausonglyrics':
      reply(mess.wait)
   apa3 = await fetchJson(`https://bx-hunter.herokuapp.com/api/music/liriklagu?query=${args[0]}&apikey=${HunterApi}`,{method:'get'})
   apa2 = apa3.result
   reply(apa2)
   break
-case "attp":
+case "cn":
               if (args.length == 0) return reply(`Ejemplo ${prefix + command} Confu`)
               buffer = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURI(q)}`)
               cnf.sendMessage(from, buffer, sticker, { quoted: freply })
               break 
-      case "contact":
+      case "aucontact":
         pe = args.join(" ");
         entah = pe.split("|")[0];
         nah = pe.split("|")[1];
@@ -4038,7 +4038,7 @@ case "attp":
           contact
         );
         break;
-case 'antidelete':
+case 'auantidelete':
 if (!isOwner && !itsMe) return
 if (args.length < 1) return reply('on/off')
 if (args[0] === "on") {
@@ -4053,7 +4053,7 @@ reply(`Desactivado con éxito antieliminar`)
 reply(`on/off`)
 }
 break
-      case 'welcome':
+      case 'auwelcome':
 if (!isOwner && !itsMe) return
 if (args.length < 1) return reply('on/off')
 if (args[0] === "on") {
@@ -4068,8 +4068,8 @@ reply(`Bienvenida desactivada con éxito`)
 reply(`on/off`)
 }
 break          
-      case "robar":
-      case "take":
+      case "aurobar":
+      case "autake":
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
         if (!isQuotedSticker) return reply("Y el sticker?");
         encmedia = JSON.parse(JSON.stringify(mek).replace("quotedM", "m"))
@@ -4083,14 +4083,14 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         break;
 
 
-      case "public":
+      case "aupublic":
         if (!isOwner) return reply("Esta función es solo para el propietario..");
         if (banChats === false) return;
         // var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
         banChats = false;
         fakeyt(`「 *MODO-PUBLICO* 」`);
         break;
-      case "self":
+      case "auself":
         if (!isOwner) return reply("Esta función es solo para el propietario.");
         if (banChats === true) return;
         uptime = process.uptime();
@@ -4098,7 +4098,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         banChats = true;
         fakeyt(`「 *MODO-PRIVADO* 」`);
         break;
-      case "hidetag":
+      case "auhidetag":
         if (!isGroup) return reply('esta función es solo para grupos');
         var value = args.join(" ");
         var group = await cnf.groupMetadata(from);
@@ -4115,13 +4115,13 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         cnf.sendMessage(from, optionshidetag, text);
         break;
     
-      case "sticker":
-      case "stiker":
-      case "sg":
-      case "s":
-      case "stickergif":
-      case "sgif":
-      case "stickgif":
+      case "56sticker":
+      case "56stiker":
+      case "56sg":
+      case "56s":
+      case "56stickergif":
+      case "56sgif":
+      case "56stickgif":
         if (
           ((isMedia && !mek.message.videoMessage) || isQuotedImage) &&
           args.length == 0
@@ -4205,7 +4205,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
           );
         }
         break;
-      case "toimg":
+      case "autoimg":
         if (!isQuotedSticker) return reply("Envia h etiqueta un sticker !");
         reply(mess.wait);
         encmedia = JSON.parse(JSON.stringify(mek).replace("quotedM", "m"))
@@ -4220,7 +4220,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
           fs.unlinkSync(ran);
         });
         break;
-      case "ytsearch":
+      case "cnytsearch":
         if (args.length < 1) return reply("Que deseas buscar?");
         var srch = args.join("");
         try {
@@ -4248,13 +4248,13 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         ytresult += "◩ *CONFU-BOT4*";
         await fakethumb(tbuff, ytresult);
         break;
-      case "setreply":
+      case "ausetreply":
       
         if (!q) return fakegroup(mess.wrongFormat);
         fake = q;
         fakegroup(`El éxito cambia la conversación falsa : ${q}`);
         break;
-      case "setfakeimg":
+      case "ausetfakeimg":
         if (
           ((isMedia && !mek.message.videoMessage) ||
             isQuotedImage ||
@@ -4273,7 +4273,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
           reply(`Envia una imagen con la etiqueta ${prefix}setfakeimg`);
         }
         break;
-      case "setthumb":
+      case "ausetthumb":
         if (
           ((isMedia && !mek.message.videoMessage) ||
             isQuotedImage ||
@@ -4292,7 +4292,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
           reply(`Envia una imagen con la etiqueta ${prefix}sethumb`);
         }
         break;
-       case "emoji":
+       case "auemoji":
         if (!q) return fakegroup("y el emoji?");
         qes = args.join(" ");
         emoji.get(`${qes}`).then((emoji) => {
@@ -4301,10 +4301,10 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
           console.log(teks);
         });
         break;
-      case "image":
-      case "imagen":
-      case "gimage":
-      case "googleimage":
+      case "56image":
+      case "56imagen":
+      case "56gimage":
+      case "56googleimage":
         if (args.length < 1) return reply("¿Qué quieres buscar??");
         reply(mess.wait);
         teks = args.join(" ");
@@ -4322,7 +4322,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         }
         break;
 
-      case "igstalk":
+      case "auigstalk":
         if (!q) return fakegroup("Cual es el nombre de usuario?");
         ig.fetchUser(`${args.join(" ")}`).then((Y) => {
           console.log(`${args.join(" ")}`);
@@ -4339,7 +4339,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
           sendMediaURL(from, ten, teks);
         });
         break;
-      case "fb":
+      case "aufb":
         if (!q) return reply("Donde esta el link?");
         if (!isUrl(args[0]) && !args[0].includes("facebook.com"))
           return reply(mess.Iv);
@@ -4351,7 +4351,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         });
         break;
         
-      case "term":
+      case "auterm":
       if (!mek.key.fromMe) return;
         if (!q) return fakegroup(mess.wrongFormat);
         exec(q, (err, stdout) => {
@@ -4361,7 +4361,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
           }
         });
         break;
-      case "join":
+      case "aujoin":
         try {
           if (!isUrl(args[0]) && !args[0].includes("whatsapp.com"))
             return reply(mess.Iv);
@@ -4375,14 +4375,14 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
           fakegroup("LINK INVÁLIDO!");
         }
         break;
-      case "runtime":
-      case "test":
+      case "auruntime":
+      case "autest":
         run = process.uptime();
         teks = `${kyun(run)}`;
         reply(teks);
         break;
-      case "speed":
-      case "ping":
+      case "auspeed":
+      case "auping":
         const timestamp = speed();
         const latensi = speed() - timestamp;
         exec(`neofetch --stdout`, (error, stdout, stderr) => {
@@ -4393,7 +4393,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         });
         break;
     
-      case "totag":
+      case "autotag":
         if (
           ((isMedia && !mek.message.videoMessage) || isQuotedSticker) &&
           args.length == 0
@@ -4507,7 +4507,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
           );
         }
         break;
-      case "tomp4":
+      case "automp4":
         if (
           ((isMedia && !mek.message.videoMessage) || isQuotedSticker) &&
           args.length == 0
@@ -4525,7 +4525,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         }
         fs.unlinkSync(owgi);
         break;
-      case "tourl":
+      case "autourl":
         if (
           ((isMedia && !mek.message.videoMessage) ||
             isQuotedImage ||
@@ -4544,7 +4544,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
           reply("Envia Foto/Video");
         }
         break;
-      case "inspect":
+      case "auinspect":
         try {
           if (!isUrl(args[0]) && !args[0].includes("whatsapp.com"))
             return reply(mess.Iv);
@@ -4607,7 +4607,7 @@ ${
           reply("Link inválido");
         }
         break;
-      case "eval":
+      case "aueval":
         if (!mek.key.fromMe) return;
         cnf.sendMessage(
           from,
