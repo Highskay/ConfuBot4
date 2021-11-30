@@ -2440,7 +2440,7 @@ case 'aulinkwa':
         }
         break;
         //get grup desc
-        case 'augetdeskgc':
+        case 'getdeskgc':
               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 				if (!isGroup) return reply('esta función es solo para grupos')
 					anu = from
