@@ -1165,6 +1165,15 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
     }
 
     if (isGroup && isAntilink && !mek.key.fromMe) {
+      if (budy.includes("http://")) {
+        if (isGroupAdmins) return
+        reply("*ENLACE DETECTADO!!* *NO SE PERMITEN ENLACES TE MATO PERRA HDP*");
+        cnf.groupRemove(from, [sender]);
+       }
+     }
+
+
+    if (isGroup && isAntilink && !mek.key.fromMe) {
       if (budy.includes("https://")) {
         if (isGroupAdmins) return
         reply("*ENLACE DETECTADO!!* *NO SE PERMITEN ENLACES TE MATO PERRA HDP*");
