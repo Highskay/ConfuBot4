@@ -1,4 +1,4 @@
-W// Script by ConfuMods
+// Script by ConfuMods
 // Si editas deja creditos
 // ConfuMods no se hara responsable de malos usos
 const {
