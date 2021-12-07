@@ -223,7 +223,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
 
 
 *_L E E  L A S  R E G L A S  E N  L A  D E S C_*`
-                welcomeBut = [{buttonId:`Menu`,buttonText:{displayText:'HOLASOYNUEVO🤗'},type:1}]
+                welcomeBut = [{buttonId:`menu`,buttonText:{displayText:'HOLASOYNUEVO😊'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 client.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
                  }      
