@@ -372,16 +372,16 @@ const checkRegisteredUser = (sender) => {
     if (prefix && command) cmdadd();
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
-const daftar1 = `✿ *HOLA* ${pushname} ${ucapanWaktu}\n\n⚡ *NUEVO EN EL GRUPO ?* *VERIFIQUESE PRIMERO* *LEE LAS REGLAS* *NO SPAM* 👈🏻`
+const daftar1 = `✿ *HOLA* ${pushname} ${ucapanWaktu}\n\n⚡*LEE LAS REGLAS* *NO SPAM* 👈🏻`
 
 
 
-       const daftar2 = ' _ALV Pamela Omni XD_ _#NUEVOS PRESENTARSE_ '
+       const daftar2 = ' _ALV Pamela XD_ _#NUEVOS PRESENTARSE_ '
        const daftar3 = [
           {
-            buttonId: `verify`,
+            buttonId: `menu`,
             buttonText: {
-              displayText: `HOLA`,
+              displayText: `HOLASOYNUEVO😊`,
             },
             type: 1,
           },]
@@ -1244,7 +1244,7 @@ const serialUser = createSerial(18)
 
  *✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦* `
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
-             buttons = [{buttonId: `menu`,buttonText:{displayText: `HOLASOYNUEVO😊`},type:1}]
+             buttons = [{buttonId: `menu`,buttonText:{displayText: `XD`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
               buttonsMessage = {footerText:'•【✪ᗹōτĎ₣ḼǺv✪】•', imageMessage: imageMsg,
               contentText:`${anuu}`,buttons,headerType:4}
@@ -4001,7 +4001,7 @@ buttons = [{buttonId: `pinterest ${q}`,buttonText:{displayText: `➡️Next`},ty
    reply(slur)
    break
 case 'wwaifu':
-          case 'lloli':
+          case 'loli':
           case 'hhusbu':
           case 'mmilf':
           case 'ccosplay':
