@@ -381,7 +381,7 @@ const daftar1 = `✿ *HOLA* ${pushname} ${ucapanWaktu}\n\n⚡ *NUEVO EN EL GRUPO
           {
             buttonId: `verify`,
             buttonText: {
-              displayText: `HOLASOYNUEVO☺️`,
+              displayText: `HOLASOYNUEVO`,
             },
             type: 1,
           },]
