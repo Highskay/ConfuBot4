@@ -132,18 +132,18 @@ fkontakk = { key: {
  }}}
 metdata = await client.groupMetadata(anu.jid)
 if(anu.announce == 'false'){
-teks = ` [ *Grupo abierto* ] \n\n_\n*Ya pueden enviar mensajes*`
+teks = ` [ *GRUPO ABIERTO* ] \n\n\n*YA PUEDEN ENVIAR MENSAJES*`
 client.sendMessage(metdata.id, teks, MessageType.text, {quoted: fkontakk})
 console.log(`- [ Grupo Abierto ] - En ${metdata.subject}`)
 }
 else if(anu.announce == 'true'){
-teks = ` [ *Grupo Cerrado* ] \n\n*Grupo Cerrado ya no pueden enviar mensajes*`
+teks = ` [ *GRUPO CERRADO* ] \n\n*GRUPO CERRADO YA NO PUEDEN ENVIAR MENSAJES*`
 client.sendMessage(metdata.id, teks, MessageType.text, {quoted: fkontakk})
 console.log(` [ Grupo Cerrado ]  En ${metdata.subject}`)
 }
 else if(!anu.desc == ''){
 tag = anu.descOwner.split('@')[0] + '@s.whatsapp.net'
-teks = ` [ REGLAS ] \n\n Las Reglas son :\n\n${anu.desc}`
+teks = ` [ *REGLAS* ] \n\n *LAS REGLAS SON* :\n\n${anu.desc}`
 client.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [tag]}, quoted: fkontakk})
 console.log(`- [ NUEVA DESC ] - En ${metdata.subject}`)
   }
@@ -222,8 +222,8 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
  *_P A M E L A  I N V T A S?_* 😳
 
 
-*_L E E  L A S  R E G L A S_*`
-                welcomeBut = [{buttonId:`menu`,buttonText:{displayText:'HOLASOYNUEVO🤗'},type:1}]
+*_L E E  L A S  R E G L A S  E N  L A  D E S C_*`
+                welcomeBut = [{buttonId:`Menu`,buttonText:{displayText:'HOLASOYNUEVO🤗'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 client.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
                  }      
@@ -266,7 +266,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
         let buffer = await getBuffer(
           `https://api-yogipw.herokuapp.com/api/demote?name=${anu_user}&msg=Ya%20no%20eres%20admin&mem=${groupAdmins.length}&picurl=${ppimg}&bgurl=https://cdn.discordapp.com/attachments/819995259261288475/835055559941292032/style.jpg`
         );
-        teks = `${anu_user} As sido degradado a usuario comun😂`;
+        teks = `${anu_user}`;
         client.sendMessage(mdata.id, buffer, MessageType.image, {
           caption: teks,
         });
