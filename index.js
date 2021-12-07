@@ -379,9 +379,9 @@ const daftar1 = `✿ *HOLA* ${pushname} ${ucapanWaktu}\n\n⚡*LEE LAS REGLAS* *N
        const daftar2 = ' _ALV Pamela XD_ _#NUEVOS PRESENTARSE_ '
        const daftar3 = [
           {
-            buttonId: `menu`,
+            buttonId: `XD`,
             buttonText: {
-              displayText: `HOLASOYNUEVO😊`,
+              displayText: `HOLASOYNUEVO`,
             },
             type: 1,
           },]
@@ -1244,7 +1244,7 @@ const serialUser = createSerial(18)
 
  *✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦* `
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
-             buttons = [{buttonId: `menu`,buttonText:{displayText: `XD`},type:1}]
+             buttons = [{buttonId: `XD`,buttonText:{displayText: `XD`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
               buttonsMessage = {footerText:'•【✪ᗹōτĎ₣ḼǺv✪】•', imageMessage: imageMsg,
               contentText:`${anuu}`,buttons,headerType:4}
