@@ -187,7 +187,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 teks = `*╭══ೋ❀❀ೋ══❀══ೋ❀❀ೋ══╮*
 
 
-     🌸➣ @${owner}
+     🌸➣  @⁨+1 (930) 200-1417
 
 
      🌸➣ *B I E N V E N I D O (A)*
