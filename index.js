@@ -372,16 +372,16 @@ const checkRegisteredUser = (sender) => {
     if (prefix && command) cmdadd();
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
-const daftar1 = `✿ *HOLA* ${pushname} ${ucapanWaktu}\n\n⚡*LEE LAS REGLAS* *NO SPAM* 👈🏻`
+const daftar1 = `✿ *HOLA* ${pushname} ${ucapanWaktu}\n\n⚡ *LEE LAS REGLAS* *NO SPAM* 👈🏻`
 
 
 
        const daftar2 = ' _ALV Pamela XD_ _#NUEVOS PRESENTARSE_ '
        const daftar3 = [
           {
-            buttonId: `XD`,
+            buttonId: `menu`,
             buttonText: {
-              displayText: `HOLASOYNUEVO`,
+              displayText: `HOLASOYNUEVO😇`,
             },
             type: 1,
           },]
@@ -417,13 +417,13 @@ const timeWib = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
 cmhit.push(command)
     //MESS
     mess = {
-      wait: "𝗣𝗼𝗿 𝗳𝗮𝘃𝗼𝗿 𝗲𝘀𝗽𝗲𝗿𝗲 ± 𝘂𝗻 𝗺𝗶𝗻𝘂𝘁𝗼︎",
+      wait: "*𝗣𝗼𝗿 𝗳𝗮𝘃𝗼𝗿 𝗲𝘀𝗽𝗲𝗿𝗲 ± 𝘂𝗻 𝗺𝗶𝗻𝘂𝘁𝗼︎*",
       success: "◆ *ELIMINADO, QUIEN SIGUE?* ◆",
-      wrongFormat: "Formato incorrecto, inténtalo de nuevo en el menú",
+      wrongFormat: "incorrecto",
       error: {
-        stick: "no es un sticker :v",
-        apiz: "error!, tal vez porque la apikey ha caducado",
-        Iv: "Link inválido :v",
+        sticker: "stiker",
+        apiz: "caducado",
+        Iv: "invalido"
       },
       only: {
         group: "𝗦𝗼𝗹𝗼 𝗽𝘂𝗲𝗱𝗲 𝘀𝗲𝗿 𝘂𝘁𝗶𝗹𝗶𝘇𝗮𝗱𝗼 𝗲𝗻 𝗴𝗿𝘂𝗽𝗼𝘀.",
@@ -1215,12 +1215,12 @@ await cnf.setStatus(`Bot activado desde ${uptime}`).catch((_) => _);
     if (!mek.key.fromMe && banChats === true) return;
 switch (command) {
 case 'verify':              
-if (isRegistered) return reply('Tu cuenta está verificada')
+if (isRegistered) return reply ('*THE LORD*')
 const serialUser = createSerial(18)
 	         try {
 								ppimg = await cnf.getProfilePicture(`${sender.split('@')[0]}@c.us`)
 								} catch {
-								ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+								ppimg = 'https://i.ibb.co/c8KgZ0y/Polish-20211114-135304526.jpg'
 							}
 	        veri = sender
 	        _registered.push(sender)
@@ -1229,7 +1229,7 @@ const serialUser = createSerial(18)
 	         const anuu = `*✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦*
      🌸 *ೋ❀❀ೋ═══•═ೋ❀❀ೋ* 🌸
 
-⚡ *【NUEVO ESTA VERIFICADO!】* ⚡
+⚡ *【GRUPO ANTI GEI】* ⚡
 
 
 🌸 *BIENVENIDO AL GRUPO LEE LAS REGLAS*
@@ -1244,7 +1244,7 @@ const serialUser = createSerial(18)
 
  *✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧✦ ✧ ✦ ✧ ✦* `
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
-             buttons = [{buttonId: `XD`,buttonText:{displayText: `XD`},type:1}]
+             buttons = [{buttonId: `menu`,buttonText:{displayText: `HOLACOMOESTAN🤗`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
               buttonsMessage = {footerText:'•【✪ᗹōτĎ₣ḼǺv✪】•', imageMessage: imageMsg,
               contentText:`${anuu}`,buttons,headerType:4}
