@@ -187,7 +187,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 teks = `*╭══ೋ❀❀ೋ══❀══ೋ❀❀ೋ══╮*
 
 
-     🌸➣ @⁨+1 (930) 200-1417 
+     🌸➣ @${owner}
 
 
      🌸➣ *B I E N V E N I D O (A)*
@@ -199,21 +199,21 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
 
 *╰══ೋ❀❀ೋ══❀══ೋ❀❀ೋ══╯*
 
- *_H O L A_* @${num.split('@')[0]}\n 
+*_H O L A_* @${num.split('@')[0]}\n 
 👋🏻 *_E S P E R O  Q U E  S E  S I E N T A_*
 *_C O M O  E N  C A S A_* 🥳
 
- *_D I S F R U T E  E L  G R U P O  P A S A L A_*
+*_D I S F R U T E  E L  G R U P O  P A S A L A_*
 *_B I E N_*  🤗  *_S E  R E S P E T U O S O_*
 *_S O C I A B L E_*
 *_Q U I Z A S  E N C U E N T R E S  E L  A M O R_*
 💞♥️💞
 
- *_A P O R T A  L E E  L A S  R E G L A S  P O R_*
+*_A P O R T A  L E E  L A S  R E G L A S  P O R_*
 *_F A V O R  P A R A  E V I T A R_*
 *_M A L O S  E N T E N D I D O S_* 😇
 
- *_N O  Q U E R E M O S   M I R O N E S_* 👀
+*_N O  Q U E R E M O S   M I R O N E S_* 👀
 *_O  F A N T A S M A S_* 👻
 
  *_A H O R A  P R E S E N T A R S E  O  S E R A_*
@@ -222,7 +222,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
  *_P A M E L A  I N V T A S?_* 😳
 
 
-*_L E E  L A S  R E G L A S  E N  L A  D E S C_*`
+*_L E E  L A S  R E G L A S  E N  L A  D E S C_* 😇`
                 welcomeBut = [{buttonId:`menu`,buttonText:{displayText:'HOLASOYNUEVO😊'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 client.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
