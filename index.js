@@ -379,7 +379,7 @@ const daftar1 = `✿ *HOLA* ${pushname} ${ucapanWaktu}\n\n⚡ *LEE LAS REGLAS* *
        const daftar2 = ' _ALV Pamela XD_ _#NUEVOS PRESENTARSE_ '
        const daftar3 = [
           {
-            buttonId: `menu`,
+            buttonId: `verify`,
             buttonText: {
               displayText: `HOLASOYNUEVO😇`,
             },
