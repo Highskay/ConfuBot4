@@ -4000,7 +4000,7 @@ buttons = [{buttonId: `pinterest ${q}`,buttonText:{displayText: `➡️Next`},ty
   slur = rival.result
    reply(slur)
    break
-case 'wwaifu':
+case 'waifu':
           case 'loli':
           case 'hhusbu':
           case 'mmilf':
@@ -4012,7 +4012,7 @@ case 'wwaifu':
 		      buttons = [{buttonId: `waifu`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = ( await cnf.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
               buttonsMessage = {footerText:'ADMIN INACTIVO😜', imageMessage: imageMsg,
-              contentText:`Click Next`,buttons,headerType:4}
+              contentText:`EAGLE EYE`,buttons,headerType:4}
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               cnf.relayWAMessage(prep)
               fs.unlinkSync(`./${sender}.jpeg`)
