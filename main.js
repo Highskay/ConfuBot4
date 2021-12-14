@@ -63,7 +63,7 @@ const sleep = async (ms) => {
 }
 const starts = async (client = new WAConnection()) => {
   client.logger.level = "warn";
-  client.version = [2, 2143, 3];
+  client.version = [2, 2147, 11];
   client.browserDescription = ["ConfuMods", "Chrome", "3.0"];
 console.log(color(figlet.textSync('Confu Bot 4.', {
 font: 'Standard',
